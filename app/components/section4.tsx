@@ -5,13 +5,13 @@ const Section4 =()=>{
     return(
         <>
         
-        <section className="flex h-96 mt-14 ">
+        <section className="flex h-96 relative bottom-16 ">
         <div>
-          <h1 className="text-4xl font-bold relative left-16 ">Nos cohortes</h1>
-          <p className="relative left-16 ">se former à un métier</p>
+          <h1 className="text-4xl font-bold relative left-10 ">Nos cohortes</h1>
+          <p className="relative left-10 ">se former à un métier</p>
         </div>
 
-        <div className="relative right-44 bg-zinc-400 p-4 h-96 mt-20">
+        <div className="relative right-48 bg-zinc-400 p-4 h-96 mt-20 rounded-xl" >
           <h4 className="text-3xl font-bold relative bottom-7">
             {" "}
             <Image
@@ -43,7 +43,7 @@ const Section4 =()=>{
             En savoir plus
           </button>
         </div>
-        <div className=" bg-zinc-400 p-9 h-96 mt-20 ">
+        <div className=" bg-zinc-400 p-9 h-96 mt-20 relative left-14 border rounded-xl">
           <h4 className="text-3xl font-bold ">Référent Digital</h4>
           <p className="mt-3 text-sm">
             Le Référentiel Digital est une approche stratégique qui vise à{" "}
@@ -57,7 +57,12 @@ const Section4 =()=>{
             <br />
             des résultats mesurables.
           </p>
-         <Buttons/>
+          <button
+            className="bg-red-600 w-44 h-12 text-white border-2 rounded border-red-600 ml-10 mt- leading-3 relative right-10 top-5 hover:scale-105 translate-x-0.5 duration-75 hover:bg-black hover:border-black"
+            type="button"
+          >
+            En savoir plus
+          </button>
         </div>
       </section>
         

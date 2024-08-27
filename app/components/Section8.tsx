@@ -24,7 +24,7 @@ const Section8 = () => {
         <div className="flex mt-16 gap-20">
           <div>
             <Image
-              className="mb-3"
+              className="mb-3  "
               src="/cnamgsc-removebg-preview 1.png"
               alt=""
               width={150}
@@ -55,7 +55,7 @@ const Section8 = () => {
             ></Image>
             <Image
               className="mt-16"
-              src="/pnpe-removebg-preview 1.png"
+              src="/pnpe-removebg-preview 1 (1).png"
               alt=""
               width={150}
               height={150}

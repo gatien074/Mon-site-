@@ -3,7 +3,7 @@ import Image from "next/image";
 
 
 
-export const Logo = () => {
+ const Logo = () => {
 
 
     return (

@@ -7,10 +7,10 @@ export const Footer= () => {
 
     return (
         <>
-          <footer className="mt-36 bg-black flex text-white  text-sm gap-5 justify-around">
+          <footer className="mt-36 bg-black flex text-white  text-sm gap-5 justify-around ">
         <Logo/>
 
-        <div className="mt-12">
+        <div className="m-12">
           <Link href="">A propos de nous</Link>
           <br />
           <Link href="">Contacts</Link>
