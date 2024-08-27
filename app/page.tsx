@@ -6,8 +6,10 @@ import footer, { Footer } from "./components/Footer";
 import {Buttons} from "./components/Buttons"
 import {Main} from "./components/main"
 import Section2 from "./components/section2"
-import Section3 from "./components/section3";
 import Section4 from "./components/section4";
+import Section5 from "./components/section5";
+import Section6 from "./components/section6";
+import Section8 from "./components/section8";
 
 export default function home(){
     return(
@@ -35,7 +37,8 @@ export default function home(){
     </section>
      <Section2/>
      <section className="  h-screen">
-        <div className="">
+        <div className="flex ">
+          <div className="">
           <h1 className="text-4xl font-bold mt-20 ml-14">Nos valeurs</h1>
           <p className=" text-xs mt-5 ml-14">
             La position de Ecole 241 est une première et unique au Gabon, elle
@@ -45,7 +48,8 @@ export default function home(){
             l’emploi.Pourquoi Ecole 241 est-elle si différente ?
           </p>
           <Buttons/>
-      <div className="flex"> 
+          </div>
+      <div className="grid grid-cols-2 justify-around ml-64"> 
       <div className=" ">
           <Image
             className="w-10 h-10"
@@ -108,6 +112,93 @@ export default function home(){
       </section>
 
         <Section4/>
+        <Section5/>
+        <Section6/>
+        
+    <section className=" mt-48 bg-zinc-400 p-8">
+    <div>
+      <h1 className="text-5xl font-bold relative ml-6">
+        Témoignage des alumnis
+      </h1>
+    </div>
+
+    <div className="flex p-8 gap-40 mt-10">
+      <div className="text-sm bg-slate-100 p-4">
+        <p>
+          L`Ecole 241 m`a permit de continuer à développer mes compétences
+          et à apprendre de nouvelles choses passionnantes. J`ai eu
+          l`opportunité de rencontrer des enseignants inspirants et des
+          camarades de classe bienveillants Grâce à cette école, j`ai pu
+          explorer différents domaines d`apprentissage et découvrir mes
+          passions. Je suis reconnaissant(e) pour tout ce que j`ai appris et
+          toutes les expériences enrichissantes que j`ai vécues à l`école
+          241.
+        </p>
+        <div className="flex gap-3 mt-3">
+          <Image
+            className="rounded-full bg-black"
+            src="/homme.jpg"
+            alt=""
+            width={60}
+            height={60}
+          ></Image>
+          <div>
+            <p className="font-bold">Mark</p>
+            <p className="text-red-500">Freelancer developpeur web</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="text-sm bg-slate-100 p-4 ">
+        <p>
+          L`ecole 241 m`a permit de explorer de nouveaux horizons, de
+          rencontrer des personnes inspirantes et de développer mes
+          compétences. J`ai eu l`opportunité d`apprendre dans un
+          environnement dynamique et bienveillant, ce qui m`a permis de
+          m`épanouir pleinement. Je suis reconnaissant(e) pour tout ce que
+          j`ai pu vivre et apprendre grâce à cette école.
+        </p>
+        <div className="flex gap-3 mt-3">
+          <Image
+            className="rounded-full bg-black"
+            src="/img1.png"
+            alt=""
+            width={60}
+            height={60}
+          ></Image>
+          <div>
+            <p className="font-bold">Julie</p>
+            <p className="text-red-500">Freelancer developpeur web</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="text-sm bg-slate-100 p-6 ">
+        <p>
+          L`ecole 241 m`a permit de  découvrir ma passion pour les sciences
+          et la technologie. Grâce à ses enseignants passionnés, j`ai pu
+          explorer de nouveaux domaines et développer mes compétences.
+          Aujourd`hui, je suis reconnaissant envers cette école qui m`a
+          ouvert de nouvelles perspectives et m`a aidé à me réaliser
+          pleinement.
+        </p>
+        <div className="flex gap-3 mt-3">
+          <Image
+            className="rounded-full bg-black"
+            src="/img2.png"
+            alt=""
+            width={60}
+            height={60}
+          ></Image>
+          <div>
+            <p className="font-bold">Sabile</p>
+            <p className="text-red-500">Référent Digital</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <Section8/>
          <Footer/>
        </>
        

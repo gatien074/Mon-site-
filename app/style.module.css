@@ -121,7 +121,7 @@ left: 5px;
 
   .sous_menu li:hover
 {
-    color: #ff0000;
+    color: #ff0000b1;
 }
 
 
@@ -158,5 +158,15 @@ left: 5px;
  
   .nom:hover{
     
-    color: #ff0000;
+    color: #e1111197;
+  }
+
+  .main{
+    background-color: #000;
+    height: 112px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position: -webkit-sticky;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1)
   }

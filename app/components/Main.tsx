@@ -7,7 +7,7 @@ export const Main = () => {
     return (
       <>
         <main>
-        <main className="bg-black h-28 flex justify-between sticky top-0 z-[1] shadow-2xl transition-colors scroll-bg-transparent">
+        <main className={style.main}>
        <Logo/>
         <div className="flex justify-center text-center ">
           <u className="text-white text-center m-auto relative right-14 no-underline p-4 flex gap-10">
