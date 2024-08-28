@@ -10,10 +10,10 @@ export const Header = () => {
   return (
     <>
       <header className="flex justify-between h-16  text-center">
-        <div className="flex ml-12 ">
+        <div className="flex ml-7 ">
           <div className={style.dropdown}>
-            <button className={style.contain}>
-              <svg
+            <button className={style.contain} >
+              <svg className="animate-bounce"
                 xmlns="http://www.w3.org/2000/svg"
                 width="36"
                 height="36"

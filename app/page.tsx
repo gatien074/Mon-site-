@@ -16,7 +16,6 @@ import style  from "./style.module.css";
 
 
 
-
 export default function home(){
     return(
        <body className={style.body}>
@@ -26,28 +25,28 @@ export default function home(){
      <Main/>
      <section className='flex' >
     <div className='m-6 block' >
-    <p className='text-6xl mt-10 ml-5 flex'>Ecole 241,  Plus qu’une <br /> formation un  métier</p>
-    <p className='ml-5 mt-8' >Ecole 241 forme au métier du numérique dans tout le Gabon. Rejoignez un <br /> réseau de plus de 25 000 apprenants  et apprentes. Vous souhaitez vous <br /> aussi intégrer un parcours de formqtion Simplon au être conseillé-e dans <br /> votre parcours ?
+    <p className='text-6xl mt-10  flex'>Ecole 241,  Plus qu’une <br /> formation un  métier</p>
+    <p className=' mt-8' >Ecole 241 forme au métier du numérique dans tout le Gabon. Rejoignez un <br /> réseau de plus de 25 000 apprenants  et apprentes. Vous souhaitez vous <br /> aussi intégrer un parcours de formqtion Simplon au être conseillé-e dans <br /> votre parcours ?
       </p> 
     <Buttons/>
     </div>
     
-    <div className=' m-auto relative left-20 animate-pulse ' >
-    <button className='border-2  border-black'  type="button"> <Image src='/femme.jpg' alt='' width={175} height={175}></Image></button> 
+    <div className=' m-auto relative left-20 animate-pulse  rounded-2xl  will-change-transform' >
+       <Image className='border-2  rounded-2xl relative top-3  ' src='/femme.jpg' alt='' width={175} height={175}></Image> 
     <p className='flex gap-1 relative top-20'>Nos article de blog <Image src="/arrow-right-line.svg" alt='' width={15} height={15}></Image></p>
     </div>
 
-    <div className='flex flex-col m-auto gap-3 relative right-14 animate-pulse'>
-      <button  className='border-2 border-black'  type="button"><Image src='/femme2.jpg' alt='' width={120} height={120}></Image></button>
-      <button  className='border-2 border-black' type="button"><Image src='/homme.jpg' alt=''width={120} height={120}></Image></button>
+    <div className='flex flex-col m-auto gap-3 relative right-14 animate-pulse will-change-transform'>
+       <Image className='border-2  rounded-2xl  relative left-4' src='/0ca30edb824afa6666e732321d718d01-removebg-preview.png' alt='' width={200} height={200}></Image> 
+      <Image className='border-2  rounded-2xl  relative left-4'  src='/6437c47584623521f2cc802ffa78415e-removebg-preview.png' alt=''width={200} height={200}></Image>
     </div>
     </section>
      <Section2/>
      <section className="  h-screen">
-        <div className="flex ">
+        <div className="flex  p-6">
           <div className="">
-          <h1 className="text-4xl font-bold mt-20 ml-8">Nos valeurs</h1>
-          <p className=" text-xs mt-5 ml-8">
+          <h1 className="text-5xl font-bold mt-20 ">Nos valeurs</h1>
+          <p className=" text-xm mt-5 ">
             La position de Ecole 241 est une première et unique au Gabon, elle
             repose sur <br />
             des valeur fortes pour une insertion profesionnelle durable sur le
@@ -59,11 +58,11 @@ export default function home(){
       <div className="grid grid-cols-2 justify-around ml-64 mt-28 gap-28 relative right-40"> 
       <div className=" flex gap-8 ">
           <Image
-            className="w-10 h-10 animate-bounce"
+            className="w-16 h-16 animate-bounce"
             src="/images (1).png"
             alt=""
-            width={30}
-            height={30}
+            width={800}
+            height={400}
           ></Image>
 
           <h6>GRATUITE</h6>
@@ -71,11 +70,11 @@ export default function home(){
 
         <div className="flex gap-8">
           <Image
-            className="w-10 h-10 animate-bounce"
+            className="w-16 h-16 animate-bounce"
             src="/images.png"
             alt=""
-            width={30}
-            height={30}
+            width={800}
+            height={400}
           ></Image>
 
           <h6>
@@ -88,11 +87,11 @@ export default function home(){
        
         <div className="flex gap-8">
           <Image
-            className="w-10 h-10 animate-bounce"
+            className="w-16 h-16 animate-bounce"
             src="/images (2).png"
             alt=""
-            width={30}
-            height={30}
+            width={800}
+            height={400}
           ></Image>
 
           <h6>
@@ -102,15 +101,15 @@ export default function home(){
         </div>
         <div className=" flex gap-8">
           <Image
-            className="w-10 h-10 animate-bounce"
+            className="w-16 h-16 animate-bounce"
             src="/images (3).png"
             alt=""
-            width={30}
-            height={30}
+            width={800}
+            height={400}
           ></Image>
 
           <h6>
-            PAS BESOIN DE SAVOIR <br /> DEJA CODER D’AIMER LES <br /> MATHS
+            PAS BESOIN DE SAVOIR DEJA CODER D’AIMER LES  MATHS
           </h6>
         </div>
      
@@ -124,20 +123,20 @@ export default function home(){
         
     <section className=" mt-48 bg-zinc-400 p-8">
     <div>
-      <h1 className="text-5xl font-bold relative ml-6">
+      <h1 className="text-5xl font-bold relative ml top-5">
         Témoignage des alumnis
       </h1>
     </div>
 
     <div className="flex p-8 gap-40 mt-10">
-      <div className="text-sm bg-slate-100 p-4 rounded-2xl  hover:bg-red-600 hover:text-white">
+      <div className="text-sm bg-slate-100 p-4 rounded-2xl  hover:bg-red-600 hover:text-white hover: ">
         <p>
           L`Ecole 241 m`a permit de continuer à développer mes compétences
           et à apprendre de nouvelles choses passionnantes. J`ai eu
           l`opportunité de rencontrer des enseignants inspirants et des
           camarades de classe bienveillants Grâce à cette école, j`ai pu
           explorer différents domaines d`apprentissage et découvrir mes
-          passions. Je suis reconnaissant(e) pour tout ce que j`ai appris et
+          passions. Je suis reconnaissant(e) pour tout ce que j`ai appris 
           toutes les expériences enrichissantes que j`ai vécues à l`école
           241.
         </p>
@@ -146,8 +145,8 @@ export default function home(){
             className="rounded-full bg-black animate-bounce"
             src="/homme.jpg"
             alt=""
-            width={60}
-            height={60}
+            width={70}
+            height={70}
           ></Image>
           <div>
             <p className="font-bold">Mark</p>
@@ -170,8 +169,8 @@ export default function home(){
             className="rounded-full bg-black animate-bounce"
             src="/img1.png"
             alt=""
-            width={60}
-            height={60}
+            width={70}
+            height={70}
           ></Image>
           <div>
             <p className="font-bold">Julie</p>
@@ -194,8 +193,8 @@ export default function home(){
             className="rounded-full bg-black animate-bounce"
             src="/img2.png"
             alt=""
-            width={60}
-            height={60}
+            width={70}
+            height={70}
           ></Image>
           <div>
             <p className="font-bold">Sabile</p>

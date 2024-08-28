@@ -7,11 +7,11 @@ const Section4 =()=>{
         
         <section className="flex h-96 relative bottom-16 ">
         <div>
-          <h1 className="text-4xl font-bold relative left-10 ">Nos cohortes</h1>
-          <p className="relative left-10 ">se former à un métier</p>
+          <h1 className="text-4xl font-bold relative left-5 ">Nos cohortes</h1>
+          <p className="relative left-5 ">se former à un métier</p>
         </div>
 
-        <div className="relative right-48 bg-zinc-400 p-4 h-96 mt-20 rounded-xl" >
+        <div className="relative right-56   bg-zinc-400 p-4 h-96 mt-20 rounded-xl" >
           <h4 className="text-3xl font-bold relative bottom-7">
             {" "}
             <Image
@@ -58,7 +58,7 @@ const Section4 =()=>{
             des résultats mesurables.
           </p>
           <button
-            className="bg-red-600 w-44 h-12 text-white border-2 rounded border-red-600 ml-10 mt- leading-3 relative right-10 top-5 hover:scale-105 translate-x-0.5 duration-75 hover:bg-black hover:border-black"
+            className="bg-red-600 w-44 h-12 text-white border-2 rounded border-red-600 ml-10 mt-14 leading-3 relative right-10 top-5 hover:scale-105 translate-x-0.5 duration-75 hover:bg-black hover:border-black"
             type="button"
           >
             En savoir plus

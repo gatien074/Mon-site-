@@ -3,6 +3,9 @@ import Link from "next/link";
 import style from "../style.module.css"
 import Logo from "../components/Logo"
 
+
+
+
 export const Main = () => {
     return (
       <>
@@ -38,7 +41,7 @@ export const Main = () => {
               Contact
             </Link>
           </u>
-      
+
          <Link className={style.lien }  href='https://vu.fr/xMXOL '><button type="button" 
             className="bg-black rounded text-red-600 border-2 accent-black border-red-700 bg: shadow hover:shadow-white hover:scale-105 translate-x-0.5 duration-75  focus:bg-[#fff] w-52 h-10 m-auto relative right-8 hover:border-black">
             Postuler sur Libreville

@@ -15,13 +15,13 @@ const Section8 = () => {
             sur le bouton ci-dessous
           </p>
           <button
-            className="bg-red-600 w-44 h-12 text-white border-2 rounded border-red-600 ml-10 mt- leading-3 relative right-10 top-16 hover:scale-105 translate-x-0.5 duration-75 hover:bg-black hover:border-black"
+            className="bg-red-600 w-44 h-12 text-white  border-2 rounded border-red-600 ml-10 mt- leading-3 relative right-10 top-16 hover:scale-105 translate-x-0.5 duration-700 hover:bg-black hover:border-black"
             type="button"
           >
             En savoir plus
           </button>
         </div>
-        <div className="flex mt-16 gap-20">
+        <div className="flex mt-16 gap-20 ml-48 ">
           <div>
             <Image
               className="mb-3  "

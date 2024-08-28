@@ -1,13 +1,13 @@
  import Image from "next/image"
  import style from "../style.module.css"
- import Libreville from "./Libreville"
+
 
 const Section6 = () => {
     return(
 
         <>
          <section>
-        <div className="m-auto ml-16 mt-16">
+        <div className="m-auto ml-8 mt-16">
           <h4 className="text-4xl font-bold ">Nous sommes à</h4>
           <p className="mt-5">
             École 241 possède à nos deux campus notamment sur les villes de
@@ -16,8 +16,8 @@ const Section6 = () => {
           </p>
         </div>
 
-        <div className="flex justify-around">
-          <div className=" relative right-20">
+        <div className="flex justify-around ">
+          <div className=" relative right-32  ">
             <div className="absolute -z-10 w-max mt-6  bg-black  break-before-all">
               <Image 
                 src="/boulevard.avif"

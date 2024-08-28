@@ -166,7 +166,7 @@ left: 5px;
  
   .nom:hover{
     
-    color: #e1111197;
+    color: #e11111b5;
   }
 
   .main{
@@ -175,7 +175,32 @@ left: 5px;
     display: flex;
     justify-content: space-between;
     z-index: 1;
-    position: -webkit-sticky;
+    position: sticky;
     transition:cubic-bezier(0.075, 0.82, 0.165, 1)
 
+  }
+
+  /* partie dévelopeur  */
+
+  .span{
+    color: #ff0000;
+  }
+
+  .h1{
+   
+    font-size: 30px;
+   padding: 123px;
+   align-items: center;
+    color: #fff;
+    position: relative;
+    bottom: 60px;
+    right: 107px;
+
+  }
+
+
+  .section{
+    background-color: #000000dc;
+    background-image: url(../public/generated.svg );
+    
   }
