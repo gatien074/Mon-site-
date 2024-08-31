@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@react-google-maps/api": "^2.19.3",
+    "carousel": "^0.0.3",
     "next": "14.2.6",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-draggable": "^4.4.6"
   },
   "devDependencies": {
     "@types/node": "^20",

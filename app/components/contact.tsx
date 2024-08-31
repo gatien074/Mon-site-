@@ -20,6 +20,5 @@ export const contact = () => {
         </>
     )
 }
-
 export default contact ;
 
