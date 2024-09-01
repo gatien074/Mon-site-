@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import style from "../style.module.css";
 import { handleClientScriptLoad } from "next/script";
+import motion from "framer-motion";
 
 
 
@@ -9,8 +10,8 @@ import { handleClientScriptLoad } from "next/script";
 export const Header = () => {
   return (
     <>
-      <header className="flex justify-between h-16  text-center">
-        <div className="flex ml-7 ">
+      <header className={style.header}>
+        <div className={style.header_div}>
           <div className={style.dropdown}>
             <button className={style.contain} >
               <svg className="animate-bounce"
@@ -102,7 +103,7 @@ export const Header = () => {
         
             
           </div>
-          <button className=" border-2 border-black w-96 h-8 justify-center text-center m-3 relative p-1 text-">
+          <button className={style.cta2}>
             <Image
               src="/camera-video-alt.svg"
               alt=""
@@ -110,7 +111,7 @@ export const Header = () => {
               height={20} ></Image>{" "} <p className={style.paragraphe}>Participer au réunion d’information en ligne </p></button>
         </div>
         <div className={style.icon}>
-          <div className="flex mr-24 ">
+          <div className="flex mr-24 w-full">
             <Link href="https://www.facebook.com/Ecole241/?locale=fr_FR">
               <svg
                 className="m-4 w-5 h-5 hover:scale-105 "
@@ -176,7 +177,7 @@ export const Header = () => {
             </Link>
           </div>
 
-          <div className="flex w-10 h-10 justify-center text-center relative top-1 right-10">
+          <div className="flex w-10 h-10 justify-center text-center relative top-1 right-10 ">
             <Image
               src="/21495917-google-traduction-logo-symbole-noir-conception-mobile-app-vecteur-illustration-gratuit-vectoriel-removebg-preview.png"
               alt=""

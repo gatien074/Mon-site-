@@ -1,20 +1,24 @@
-
+import style from "../style.module.css";
+import React from "react";
+import Buttons from './Buttons';
+import { color } from "framer-motion";
+import { Prompt } from "next/font/google";
 
 
 const Section5 = ()=>{
     return(
         <>
-        <section className="mt-44 bg-zinc-300 p-10  h-96">
+        <section className="mt-44  bg-zinc-300 p-10  h-96">
         <div className="relative top-10">
-          <h4 className="text-4xl font-bold relative right-5  mb-8 ">
+          <h4 className={style.section_titre}>
             Status des promos formations
           </h4>
-          <p className="relative right-5  bottom-6">
+          <p className={style.titres}>
             Nous vous listons les promotions en cours et celle avenirs
           </p>
         </div>
-        <div className="flex mt justify-around relative left-2 top-16 ">
-          <div className="bg-slate-100 relative right-20 w-80 p-4  rounded-xl drop-shadow-2xl ">
+        <div className= {style.section_v}>
+          <div className="bg-slate-100 relative left-16  w-80 p-4  rounded-xl drop-shadow-2xl ">
             <p className="text-sm font-bold">Développement web et web mobile</p>
             <p className="text-sm font-bold">Promo 5 2023 - 2024</p>
             <div className="flex">
@@ -22,6 +26,7 @@ const Section5 = ()=>{
               <p className="relative left-12 text-sm">
                 PROMO EN COURS{" "}
                 <button
+               
                   className="bg-red-600 rounded-full w-5 h-4"
                   type="button"
                 ></button>
@@ -29,7 +34,7 @@ const Section5 = ()=>{
             </div>
           </div>
 
-          <div className="bg-slate-100  relative left-4  w-80 p-4 rounded-xl  drop-shadow-2xl">
+          <div className="bg-slate-100  relative left-16  w-80 p-4 rounded-xl  drop-shadow-2xl">
             <p className="text-sm font-bold">Développement web et web mobile</p>
             <p className="text-sm font-bold">Promo 5 2023 - 2024</p>
             <div className="flex">

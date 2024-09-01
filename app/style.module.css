@@ -6,11 +6,143 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.link{
-    position: relative;
-    right: 12px;
+/* partie header  */
+.header{
+  display: flex;
+  justify-content: space-around;
+}
+/* cta pour le button participation  */
+.cta2{
+  border: 2px solid #000;
+  align-items: center;
+  height: 32px;
+  width: 400px;
+  margin-top: 12px;
+}   
+
+/* header div le parent des buttons de alumnis et de participation */
+.header_div{
+  display: flex;
+  gap: 12px;
 }
 
+/* Partie main  */
+
+.main{
+  display: flex;
+}
+
+
+/* le parent liste  */
+
+.main_liste{
+   display: flex;
+   margin-top: 35px;
+   gap: 23px;
+  transform: scale(1);
+  
+}
+
+/* les sections  */
+
+.première_section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* partie section text  */
+
+.section_text{
+  font-size: 300%;
+  margin-left: 18%;
+  margin-top: 10%;
+ font-weight: bold;
+}
+.section_texte2{
+  margin-left: 18%;
+  font-size: 90%;
+  margin-top: 2%;
+}
+
+.span{
+  color: #f00707;
+  text-decoration: underline;
+}
+
+.section_images{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* deuxième section  */
+
+.deuxième_section{
+  background-color: #000;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr;
+ margin-top: 5%;
+}
+
+.section_test{
+  margin-left: 5%;
+  font-size: 300%;
+  font-weight: bold;
+}
+
+.section_test2{
+  margin-left: 5%;
+ font-size: 100%;
+}
+
+.sections_images{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 2%;
+}
+
+.section_h1{
+  margin-left: 16%;
+  font-size: 300%;
+  font-weight: bold;
+  margin-top: 16%;
+}
+
+.section_p{
+  margin-left: 16%;
+  font-size: 95%;
+}
+
+/* nos cohortes  */
+
+.boxe{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding-bottom: 5%;
+}
+
+/* Status des promos formations */
+
+.section_titre{
+  font-weight: bold;
+  margin-left: 5%;
+  font-size: 300%;
+}
+
+.titres{
+  margin-left: 5%;
+}
+.section_v{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5%;
+}
+
+
+
+
+
+/* partie icons  formation developpeur  */
 .icon{
     display: flex;
 }
@@ -19,12 +151,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 128px;
+    width: 100%;
      background-color: black;
    font-size: 12px;
     line-height: 9px;
    height: 32px;
     margin: 23px;
+    border: 2px solid black;
 
 }
 
@@ -33,6 +166,8 @@
     float: left;
     overflow: hidden;
     margin-top: 12px;
+    
+  
   }
   .dropdown .contain {
     font-size: 16px;
@@ -47,13 +182,13 @@
     transition: background-color 0.3s;
   }
   .header a:hover, .dropdown:hover .contain {
-    background-color: #d50909;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
   }
   .dropdown_content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #fff9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 2;
@@ -71,7 +206,7 @@
     transition: background-color 0.3s;
   }
   .dropdown_content a:hover {
-    background-color: #ddd;
+    background-color: #f00707;
   }
   .dropdown:hover .dropdown_content {
     display: block;
@@ -81,6 +216,7 @@
 position: relative;
 bottom: 24px;
 left: 5px;
+max-width: 100%;
 
     
   }
@@ -129,17 +265,16 @@ left: 5px;
 
   .sous_menu li:hover
 {
-    color: #ff0000b1;
+    color: #ff0000e8;
 }
 
 
   .sous_menu{
     display: none;
     position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: -1;
-    max-height: 300px;
+    width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 0, 0, 0.2);
+    z-index: 1;
     overflow-y: auto;
 
   }
@@ -147,7 +282,7 @@ left: 5px;
   .sous_menu li{
     float: none;
     color: rgb(0, 0, 0);
-    padding: 14px 16px;
+    padding: 8px 8px;
     display: block;
     text-align: left;
     transition: background-color 0.3s;
@@ -170,14 +305,15 @@ left: 5px;
   }
 
   .main{
+    width: 100%;
     background-color: #000;
-    height: 112px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     z-index: 1;
     position: sticky;
-    transition:cubic-bezier(0.075, 0.82, 0.165, 1)
-
+    color: #fff;
+  
   }
 
   /* partie dévelopeur  */
@@ -187,20 +323,36 @@ left: 5px;
   }
 
   .h1{
-   
-    font-size: 30px;
-   padding: 123px;
-   align-items: center;
+     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
     color: #fff;
-    position: relative;
-    bottom: 60px;
-    right: 107px;
-
+   
   }
 
 
   .section{
     background-color: #000000dc;
     background-image: url(../public/generated.svg );
-    
+   display: grid;
+   grid-template-columns: 1fr 1fr;
   }
+
+
+/* 
+  @media screen and (min-width: 393px) and (max-width: 820px) {
+    .premère_section{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    
+  .section_images{
+    display: grid;
+    grid-template-columns: 1fr ;
+  }
+  
+  
+  } */

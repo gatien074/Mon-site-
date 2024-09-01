@@ -1,44 +1,42 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../components/Logo";
+import Logo from "./Logo";
 
 
 export const Footer= () => {
 
     return (
         <>
-          <footer className="mt-36 bg-black flex text-white  text-sm gap-5 justify-around ">
-        <Logo/>
+         <footer className="mt-36 bg-black text-white text-sm w-full">
+  <div className="flex flex-col lg:flex-row items-center lg:items-start justify-around gap-10 p-8">
+    <div className="mb-8 lg:mb-0">
+      <Logo />
+    </div>
 
-        <div className="m-12">
-          <Link href="">A propos de nous</Link>
-          <br />
-          <Link href="">Contacts</Link>
-          <br />
-          <Link href="">Notre Impact</Link>
-        </div>
+    <div className="flex flex-col items-center lg:items-start">
+      <Link className="text-sm mb-2 hover:underline" href="">A propos de nous</Link>
+      <Link className="text-sm mb-2 hover:underline" href="">Contacts</Link>
+      <Link className="text-sm mb-2 hover:underline" href="">Notre Impact</Link>
+    </div>
 
-        <div className="mt-12">
-          <Link href="">Devenir Formateur</Link>
-          <br />
-          <Link href="">Devenir Partenaire</Link>
-        </div>
+    <div className="flex flex-col items-center lg:items-start">
+      <Link className="text-sm mb-2 hover:underline" href="">Devenir Formateur</Link>
+      <Link className="text-sm mb-2 hover:underline" href="">Devenir Partenaire</Link>
+    </div>
 
-        <div className="mt-12">
-          <Link href="">Formation Référent Digital</Link>
-          <br />
-          <Link href="">Formation Developpeur Web</Link>
-        </div>
+    <div className="flex flex-col items-center lg:items-start">
+      <Link className="text-sm mb-2 hover:underline" href="">Formation Référent Digital</Link>
+      <Link className="text-sm mb-2 hover:underline" href="">Formation Developpeur Web</Link>
+    </div>
 
-        <div className="mt-12">
-          <Link href="">Campus de Libreville</Link>
-          <br />
-          <Link href="">Campus de Port-Gentil</Link>
-          <br />
-          <Link href="">Campus de Moanda</Link>
-        </div>
-      </footer>
-       
+    <div className="flex flex-col items-center lg:items-start">
+      <Link className="text-sm mb-2 hover:underline" href="">Campus de Libreville</Link>
+      <Link className="text-sm mb-2 hover:underline" href="">Campus de Port-Gentil</Link>
+      <Link className="text-sm mb-2 hover:underline" href="">Campus de Moanda</Link>
+    </div>
+  </div>
+</footer>
+
         
         </>
     )

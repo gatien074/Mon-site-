@@ -7,7 +7,7 @@ export const Buttons = () => {
         <>
         
         <button
-            className="bg-red-600 w-52 h-14 text-white border-2 rounded border-red-600  mt-8 leading-3 hover:scale-105 translate-x-0.5 duration-75 hover:bg-black hover:border-black"
+            className="bg-red-600 w-52 h-14 text-white border-2 relative left-28 rounded border-red-600  mt-8 leading-3 hover:scale-105 translate-x-0.5 duration-75 hover:bg-black hover:border-black"
             type="button"
           >
             Contactez-nous

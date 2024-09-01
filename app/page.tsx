@@ -1,5 +1,7 @@
+
+
 import Header from "./components/Header"
-import Main from "./components/Main";
+
 import Image from "next/image";
 import Link from "next/link";
 import footer, { Footer } from "./components/Footer";
@@ -11,6 +13,12 @@ import Section5 from "./components/Section5";
 import Section6 from "./components/Section6";
 import Section8 from "./components/Section8";
 import style  from "./style.module.css";
+import Main from "./components/Main";
+import { useState } from 'react';
+import React from "react";
+import section from './components/section1';
+
+
 
 
 
@@ -23,30 +31,30 @@ export default function home(){
         <Header/> 
         
      <Main/>
-     <section className='flex' >
-    <div className='m-6 block' >
-    <p className='text-6xl mt-10  flex'>Ecole 241,  Plus qu’une <br /> formation un  métier</p>
-    <p className=' mt-8' >Ecole 241 forme au métier du numérique dans tout le Gabon. Rejoignez un <br /> réseau de plus de 25 000 apprenants  et apprentes. Vous souhaitez vous <br /> aussi intégrer un parcours de formqtion Simplon au être conseillé-e dans <br /> votre parcours ?
+     <section className={style.première_section} >
+    <div >
+    <p className={style.section_text}>Ecole 241,  Plus qu’une <br /> formation un <span className={style.span}>métier</span>  </p>
+    <p className={style.section_texte2} >Ecole 241 forme au métier du numérique dans tout le Gabon. Rejoignez un <br /> réseau de plus de 25 000 apprenants  et apprentes. Vous souhaitez vous <br /> aussi intégrer un parcours de formqtion Simplon au être conseillé-e dans <br /> votre parcours ?
       </p> 
     <Buttons/>
-    </div>
-    
-    <div className=' m-auto relative left-20 animate-pulse  rounded-2xl  will-change-transform' >
+  </div>
+    <div className={style.section_images}>
+    <div className=' m-auto relative left-10 animate-pulse  rounded-2xl  will-change-transform' >
        <Image className='border-2  rounded-2xl relative top-3  ' src='/femme.jpg' alt='' width={175} height={175}></Image> 
     <p className='flex gap-1 relative top-20'>Nos article de blog <Image src="/arrow-right-line.svg" alt='' width={15} height={15}></Image></p>
-    </div>
-
-    <div className='flex flex-col m-auto gap-3 relative right-14 animate-pulse will-change-transform'>
+   </div>
+   <div className='flex flex-col m-auto gap-3 relative right-28 animate-pulse will-change-transform'>
        <Image className='border-2  rounded-2xl  relative left-4' src='/0ca30edb824afa6666e732321d718d01-removebg-preview.png' alt='' width={200} height={200}></Image> 
       <Image className='border-2  rounded-2xl  relative left-4'  src='/6437c47584623521f2cc802ffa78415e-removebg-preview.png' alt=''width={200} height={200}></Image>
     </div>
+  </div>
     </section>
      <Section2/>
-     <section className="  h-screen">
-        <div className="flex  p-6">
+     <section className=" h-screen">
+        <div className="grid grid-cols-2">
           <div className="">
-          <h1 className="text-5xl font-bold mt-20 ">Nos valeurs</h1>
-          <p className=" text-xm mt-5 ">
+          <h1 className={style.section_h1}>Nos valeurs</h1>
+          <p className={style.section_p}>
             La position de Ecole 241 est une première et unique au Gabon, elle
             repose sur <br />
             des valeur fortes pour une insertion profesionnelle durable sur le
@@ -56,28 +64,28 @@ export default function home(){
           <Buttons/>
           </div>
       <div className="grid grid-cols-2 justify-around ml-64 mt-28 gap-28 relative right-40"> 
-      <div className=" flex gap-8 ">
+      <div className=" flex gap-5 ">
           <Image
-            className="w-16 h-16 animate-bounce"
+            className="w-14 h-14 animate-bounce"
             src="/images (1).png"
             alt=""
             width={800}
             height={400}
           ></Image>
 
-          <h6>GRATUITE</h6>
+          <h6 className="text-sm">GRATUITE</h6>
         </div>
 
-        <div className="flex gap-8">
+        <div className="flex gap-5">
           <Image
-            className="w-16 h-16 animate-bounce"
+            className="w-14 h-14 animate-bounce"
             src="/images.png"
             alt=""
             width={800}
             height={400}
           ></Image>
 
-          <h6>
+          <h6 className="text-sm">
             POUR TOUS, <br />
             POUR TOUTES
           </h6>
@@ -85,30 +93,30 @@ export default function home(){
        
 
        
-        <div className="flex gap-8">
+        <div className="flex gap-5">
           <Image
-            className="w-16 h-16 animate-bounce"
+            className="w-14 h-14 animate-bounce"
             src="/images (2).png"
             alt=""
             width={800}
             height={400}
           ></Image>
 
-          <h6>
+          <h6 className="text-sm">
             AUCUN DIPLOME <br />
             REQUIS
           </h6>
         </div>
-        <div className=" flex gap-8">
+        <div className=" flex gap-5">
           <Image
-            className="w-16 h-16 animate-bounce"
+            className="w-14 h-14 animate-bounce"
             src="/images (3).png"
             alt=""
             width={800}
             height={400}
           ></Image>
 
-          <h6>
+          <h6 className="text-sm ">
             PAS BESOIN DE SAVOIR DEJA CODER D’AIMER LES  MATHS
           </h6>
         </div>

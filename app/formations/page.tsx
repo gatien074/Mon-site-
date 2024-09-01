@@ -3,6 +3,7 @@ import {Header} from '../components/Header';
 import Main from "../components/Main"
 import Formations from "../components/Formations"
 
+
 export default function formation (){
     return (
         <>
@@ -10,6 +11,7 @@ export default function formation (){
 
         <Main />
         <Formations />
+       
         </>
     )
 }
