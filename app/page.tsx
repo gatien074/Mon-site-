@@ -43,7 +43,7 @@ export default function home(){
        <Image className='border-2  rounded-2xl relative top-3  ' src='/femme.jpg' alt='' width={175} height={175}></Image> 
     <p className='flex gap-1 relative top-20'>Nos article de blog <Image src="/arrow-right-line.svg" alt='' width={15} height={15}></Image></p>
    </div>
-   <div className='flex flex-col m-auto gap-3 relative right-28 animate-pulse will-change-transform'>
+   <div className='sm:flex flex-col m-auto gap-3 relative right-28 animate-pulse will-change-transform'>
        <Image className='border-2  rounded-2xl  relative left-4' src='/0ca30edb824afa6666e732321d718d01-removebg-preview.png' alt='' width={200} height={200}></Image> 
       <Image className='border-2  rounded-2xl  relative left-4'  src='/6437c47584623521f2cc802ffa78415e-removebg-preview.png' alt=''width={200} height={200}></Image>
     </div>
@@ -131,13 +131,13 @@ export default function home(){
         
     <section className=" mt-48 bg-zinc-400 p-8">
     <div>
-      <h1 className="text-5xl font-bold relative ml top-5">
+      <h1 className="text-5xl font-bold relative ml-24 top-5">
         Témoignage des alumnis
       </h1>
     </div>
 
-    <div className="flex p-8 gap-40 mt-10">
-      <div className="text-sm bg-slate-100 p-4 rounded-2xl  hover:bg-red-600 hover:text-white hover: ">
+    <div className={style.section7 }>
+      <div className=" relative left-24 text-sm bg-slate-100 p-4 rounded-2xl  hover:bg-red-600 hover:text-white hover: ">
         <p>
           L`Ecole 241 m`a permit de continuer à développer mes compétences
           et à apprendre de nouvelles choses passionnantes. J`ai eu
@@ -163,7 +163,7 @@ export default function home(){
         </div>
       </div>
 
-      <div className="text-sm bg-slate-100 p-4 rounded-2xl  hover:bg-red-600 hover:text-white">
+      <div className=" relative left-5 text-sm bg-slate-100 p-4 rounded-2xl  hover:bg-red-600 hover:text-white">
         <p>
           L`ecole 241 m`a permit de explorer de nouveaux horizons, de
           rencontrer des personnes inspirantes et de développer mes
@@ -187,7 +187,7 @@ export default function home(){
         </div>
       </div>
 
-      <div className="text-sm bg-slate-100 p-6 rounded-2xl hover:bg-red-600 hover:text-white">
+      <div className=" relative right-16 text-sm bg-slate-100 p-6 rounded-2xl hover:bg-red-600 hover:text-white">
         <p>
           L`ecole 241 m`a permit de  découvrir ma passion pour les sciences
           et la technologie. Grâce à ses enseignants passionnés, j`ai pu
