@@ -38,6 +38,7 @@ const HomePage: React.FC = () => {
         <div className="flex flex-wrap gap-4">
           <VideoPlayer src="/video.mp4" width={600} />
           <VideoPlayer src="/videos.mp4" width={600} />
+          <VideoPlayer src="/video3.mp4" width={600} />
           
         </div>
       </main>
