@@ -3,8 +3,6 @@ import style from "../style.module.css";
 import section from './section1';
 
 
-
-
 const Section8 = () => {
     return(
         <section className={style.section8}>
@@ -28,21 +26,21 @@ const Section8 = () => {
         <div className={style.section_imgs}>
           <div className={style.images1}>
             <Image
-               className={style.carousel_image}
+               className=""
               src="/cnamgsc-removebg-preview 1.png"
               alt=""
               width={150}
               height={150}
             ></Image>
             <Image
-              className={style.carousel_image}
+              className="mt-16"
               src="/ogooue.png"
               alt=""
               width={150}
               height={150}
             ></Image>
             <Image
-              className={style.carousel_image}
+              className="mt-20"
               src="/eramet.png"
               alt=""
               width={150}
