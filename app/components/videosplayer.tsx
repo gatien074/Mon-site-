@@ -2,12 +2,12 @@ import React from "react";
 
 interface VideoPlayerProps {
   src: string;
-  width: 600; // La largeur est optionnelle
+  width: number; // La largeur est optionnelle
 }
 
-const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, width = 600 }) => {
+const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, width = 600, }) => {
   return (
-    <div className="container mx-auto px-4 py-16 ">
+    <div className="container mx-auto px-16 py-16 flex justify-center ">
       <video controls width={width}>
         <source src={src} type="video/mp4" />
         Votre navigateur ne prend pas en charge la balise vidéo.
