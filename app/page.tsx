@@ -13,7 +13,7 @@ import Section5 from "./components/Section5";
 import Section6 from "./components/Section6";
 import Section8 from "./components/Section8";
 import style  from "./style.module.css";
-import Main from "./components/main";
+import Main from "./components/Main";
 import { useState } from 'react';
 import React from "react";
 import section from './components/section1';
