@@ -1,11 +1,9 @@
-
-
 import Header from "./components/Header"
-
+import Main from "./components/Main";
 import Image from "next/image";
 import Link from "next/link";
 import footer, { Footer } from "./components/Footer";
-import {Buttons} from "./components/Buttons"
+import {BlinkingButton} from "./components/BlinkingButton"
 // import {Main} from "./components/main"
 import Section2 from "./components/Section2"
 import Section4 from "./components/section4";
@@ -13,12 +11,7 @@ import Section5 from "./components/Section5";
 import Section6 from "./components/Section6";
 import Section8 from "./components/Section8";
 import style  from "./style.module.css";
-import Main from "./components/Main";
-import { useState } from 'react';
-import React from "react";
-import section from './components/section1';
-
-
+import Marquee from "./components/Marque";
 
 
 
@@ -31,187 +24,196 @@ export default function home(){
         <Header/> 
         
      <Main/>
-     <section className={style.première_section} >
-    <div >
-    <p className={style.section_text}>Ecole 241,  Plus qu’une <br /> formation un <span className={style.span}>métier</span>  </p>
-    <p className={style.section_texte2} >Ecole 241 forme au métier du numérique dans tout le Gabon. Rejoignez un <br /> réseau de plus de 25 000 apprenants  et apprentes. Vous souhaitez vous <br /> aussi intégrer un parcours de formqtion Simplon au être conseillé-e dans <br /> votre parcours ?
-      </p> 
-    <Buttons/>
-  </div>
-    <div className={style.section_images}>
-    <div className=' m-auto relative left-10 animate-pulse  rounded-2xl  will-change-transform' >
-       <Image className='border-2  rounded-2xl relative top-3  ' src='/femme.jpg' alt='' width={175} height={175}></Image> 
-    <p className='flex gap-1 relative top-20'>Nos article de blog <Image src="/arrow-right-line.svg" alt='' width={15} height={15}></Image></p>
-   </div>
-   <div className='sm:flex flex-col m-auto gap-3 relative right-28 animate-pulse will-change-transform'>
-       <Image className='border-2  rounded-2xl  relative left-4' src='/0ca30edb824afa6666e732321d718d01-removebg-preview.png' alt='' width={200} height={200}></Image> 
-      <Image className='border-2  rounded-2xl  relative left-4'  src='/6437c47584623521f2cc802ffa78415e-removebg-preview.png' alt=''width={200} height={200}></Image>
+     <section className="container sm:w-full md:h-1/2 sm:flex md:flex">
+  <div className= "flex-col md:flex-row sm:items-center m-6">
+    <h1 className="text-4xl md:text-6xl mt-8 md:mt-16 ml-8 md:ml-24 flex font-bold ">
+      Ecole 241, Plus qu’une <br /> formation un métier
+    </h1>
+
+    <p className="mt-4 md:mt-8 ml-8 md:ml-24 text-sm md:text-base ">
+      <Marquee/>
+    </p>
+
+    <div className=" flex-col md:flex-row ml-8 md:ml-24 mt-4">
+      <BlinkingButton />
     </div>
   </div>
-    </section>
+
+  <div className="  flex-col md:flex-row m-auto mt- md:mt-24  animate-pulse rounded-2xl sm:m-6">
+    <Image
+      className="w-full sm:w-1/2 border-2 mt-8 rounded-2xl "
+      src="/femme.jpg"
+      alt=""
+      width={200}
+      height={200}
+    />
+    <p className=" flex-col md:flex-row gap-1 mt-12 sm:justify-center mr-7 text-sm md:justify-start">
+      Nos articles de blog
+      <Image
+      className=""
+        src="/arrow-right-line.svg"
+        alt=""
+        width={15}
+        height={15}
+      />
+    </p>
+  </div>
+
+  <div className="md:flex-row flex-col  m-auto mt-8 md:mt-20 gap-3 relative right-0 md:right-14 animate-pulse">
+    <Image
+      className="  w-full sm:w-1/2 border-2 mt-10 rounded-2xl"
+      src="/0ca30edb824afa6666e732321d718d01-removebg-preview.png"
+      alt=""
+      width={250}
+      height={250}
+    />
+    <Image
+      className=" w-full sm:w-1/2 border-2  mt-10 rounded-2xl"
+      src="/6437c47584623521f2cc802ffa78415e-removebg-preview.png"
+      alt=""
+      width={250}
+      height={250}
+    />
+  </div>
+</section>
+
      <Section2/>
-     <section className=" h-screen">
-        <div className="grid grid-cols-2">
-          <div className="">
-          <h1 className={style.section_h1}>Nos valeurs</h1>
-          <p className={style.section_p}>
-            La position de Ecole 241 est une première et unique au Gabon, elle
-            repose sur <br />
-            des valeur fortes pour une insertion profesionnelle durable sur le
-            marché de 
-            l’emploi.Pourquoi Ecole 241 est-elle si différente ?
-          </p>
-          <Buttons/>
-          </div>
-      <div className="grid grid-cols-2 justify-around ml-64 mt-28 gap-28 relative right-40"> 
-      <div className=" flex gap-5 ">
-          <Image
-            className="w-14 h-14 animate-bounce"
-            src="/images (1).png"
-            alt=""
-            width={800}
-            height={400}
-          ></Image>
+     <section className="container mx-auto flex flex-col md:flex-row w-full md:h-auto h-screen mb-48 p-6">
+  <div className="w-full flex flex-wrap">
+    <div className="w-full sm:w-1/2 flex flex-col justify-center">
+      <h1 className="text-3xl md:text-5xl font-bold mt-10 sm:mt-20 ml-5 sm:ml-20">Nos valeurs</h1>
+      <p className="text-sm mt-5 ml-5 sm:ml-20">
+        La position de Ecole 241 est une première et unique au Gabon, elle repose sur des valeurs fortes pour une insertion professionnelle durable sur le marché de l’emploi. Pourquoi Ecole 241 est-elle si différente ?
+      </p>
+      <div className="ml-5 sm:ml-20 mt-5 sm:mt-10">
+        <BlinkingButton />
+      </div>
+    </div>
+    
+    <div className="w-full sm:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-16 mt-10 sm:mt-28">
+      <div className="flex flex-col items-center text-center gap-4">
+        <Image
+          className="w-16 h-16 sm:w-20 sm:h-20 animate-bounce"
+          src="/images (1).png"
+          alt="Gratuité"
+          width={800}
+          height={400}
+        />
+        <h6 className="text-base sm:text-lg">GRATUITE</h6>
+      </div>
+      <div className="flex flex-col items-center text-center gap-4">
+        <Image
+          className="w-16 h-16 sm:w-20 sm:h-20 animate-bounce"
+          src="/images.png"
+          alt="Pour tous, pour toutes"
+          width={800}
+          height={400}
+        />
+        <h6 className="text-base sm:text-lg">
+          POUR TOUS, <br />
+          POUR TOUTES
+        </h6>
+      </div>
+      <div className="flex flex-col items-center text-center gap-4">
+        <Image
+          className="w-16 h-16 sm:w-20 sm:h-20 animate-bounce"
+          src="/images (2).png"
+          alt="Aucun diplôme requis"
+          width={800}
+          height={400}
+        />
+        <h6 className="text-base sm:text-lg">
+          AUCUN DIPLOME <br />
+          REQUIS
+        </h6>
+      </div>
+      <div className="flex flex-col items-center text-center gap-4">
+        <Image
+          className="w-16 h-16 sm:w-20 sm:h-20 animate-bounce"
+          src="/images (3).png"
+          alt="Pas besoin de savoir coder"
+          width={800}
+          height={400}
+        />
+        <h6 className="text-base sm:text-lg">
+          PAS BESOIN DE SAVOIR <br />
+          DEJA CODER
+        </h6>
+      </div>
+    </div>
+  </div>
+</section>
 
-          <h6 className="text-sm">GRATUITE</h6>
-        </div>
-
-        <div className="flex gap-5">
-          <Image
-            className="w-14 h-14 animate-bounce"
-            src="/images.png"
-            alt=""
-            width={800}
-            height={400}
-          ></Image>
-
-          <h6 className="text-sm">
-            POUR TOUS, <br />
-            POUR TOUTES
-          </h6>
-        </div>
-       
-
-       
-        <div className="flex gap-5">
-          <Image
-            className="w-14 h-14 animate-bounce"
-            src="/images (2).png"
-            alt=""
-            width={800}
-            height={400}
-          ></Image>
-
-          <h6 className="text-sm">
-            AUCUN DIPLOME <br />
-            REQUIS
-          </h6>
-        </div>
-        <div className=" flex gap-5">
-          <Image
-            className="w-14 h-14 animate-bounce"
-            src="/images (3).png"
-            alt=""
-            width={800}
-            height={400}
-          ></Image>
-
-          <h6 className="text-sm ">
-            PAS BESOIN DE SAVOIR DEJA CODER D’AIMER LES  MATHS
-          </h6>
-        </div>
-     
-        </div>
-  </div> 
-      </section>
 
         <Section4/>
         <Section5/>
         <Section6/>
-        
-    <section className=" mt-48 bg-zinc-400 p-8">
-    <div>
-      <h1 className="text-5xl font-bold relative ml-24 top-5">
-        Témoignage des alumnis
-      </h1>
-    </div>
+        <section className="container mx-auto mt-24 bg-zinc-400 p-8">
+  <div className="text-center">
+    <h1 className="text-4xl font-bold">Témoignage des alumni</h1>
+  </div>
 
-    <div className={style.section7 }>
-      <div className=" relative left-24 text-sm bg-slate-100 p-4 rounded-2xl  hover:bg-red-600 hover:text-white hover: ">
-        <p>
-          L`Ecole 241 m`a permit de continuer à développer mes compétences
-          et à apprendre de nouvelles choses passionnantes. J`ai eu
-          l`opportunité de rencontrer des enseignants inspirants et des
-          camarades de classe bienveillants Grâce à cette école, j`ai pu
-          explorer différents domaines d`apprentissage et découvrir mes
-          passions. Je suis reconnaissant(e) pour tout ce que j`ai appris 
-          toutes les expériences enrichissantes que j`ai vécues à l`école
-          241.
-        </p>
-        <div className="flex gap-3 mt-3">
-          <Image
-            className="rounded-full bg-black animate-bounce"
-            src="/homme.jpg"
-            alt=""
-            width={70}
-            height={70}
-          ></Image>
-          <div>
-            <p className="font-bold">Mark</p>
-            <p className="text-black">Freelancer developpeur web</p>
-          </div>
-        </div>
-      </div>
-
-      <div className=" relative left-5 text-sm bg-slate-100 p-4 rounded-2xl  hover:bg-red-600 hover:text-white">
-        <p>
-          L`ecole 241 m`a permit de explorer de nouveaux horizons, de
-          rencontrer des personnes inspirantes et de développer mes
-          compétences. J`ai eu l`opportunité d`apprendre dans un
-          environnement dynamique et bienveillant, ce qui m`a permis de
-          m`épanouir pleinement. Je suis reconnaissant(e) pour tout ce que
-          j`ai pu vivre et apprendre grâce à cette école.
-        </p>
-        <div className="flex gap-3 mt-3">
-          <Image
-            className="rounded-full bg-black animate-bounce"
-            src="/img1.png"
-            alt=""
-            width={70}
-            height={70}
-          ></Image>
-          <div>
-            <p className="font-bold">Julie</p>
-            <p className="text-black">Freelancer developpeur web</p>
-          </div>
-        </div>
-      </div>
-
-      <div className=" relative right-16 text-sm bg-slate-100 p-6 rounded-2xl hover:bg-red-600 hover:text-white">
-        <p>
-          L`ecole 241 m`a permit de  découvrir ma passion pour les sciences
-          et la technologie. Grâce à ses enseignants passionnés, j`ai pu
-          explorer de nouveaux domaines et développer mes compétences.
-          Aujourd`hui, je suis reconnaissant envers cette école qui m`a
-          ouvert de nouvelles perspectives et m`a aidé à me réaliser
-          pleinement.
-        </p>
-        <div className="flex gap-3 mt-3">
-          <Image
-            className="rounded-full bg-black animate-bounce"
-            src="/img2.png"
-            alt=""
-            width={70}
-            height={70}
-          ></Image>
-          <div>
-            <p className="font-bold">Sabile</p>
-            <p className="text-black">Référent Digital</p>
-          </div>
+  <div className="flex flex-col md:flex-row md:justify-between items-center mt-10 gap-8">
+    <div className="bg-slate-100 p-6 rounded-2xl text-center max-w-md transition-transform duration-300 ease-in-out hover:bg-red-600 hover:text-white">
+      <p className="mb-4">
+        L`Ecole 241 m`a permis de continuer à développer mes compétences et à apprendre de nouvelles choses passionnantes. J`ai eu l`opportunité de rencontrer des enseignants inspirants et des camarades de classe bienveillants. Grâce à cette école, j`ai pu explorer différents domaines d`apprentissage et découvrir mes passions. Je suis reconnaissant(e) pour tout ce que j`ai appris et toutes les expériences enrichissantes que j`ai vécues à l`école 241.
+      </p>
+      <div className="flex items-center justify-center gap-3">
+        <Image
+          className="rounded-full bg-black animate-bounce"
+          src="/homme.jpg"
+          alt="Mark"
+          width={70}
+          height={70}
+        />
+        <div>
+          <p className="font-bold">Mark</p>
+          <p className="text-black">Freelancer développeur web</p>
         </div>
       </div>
     </div>
-  </section>
+
+    <div className="bg-slate-100 p-6 rounded-2xl text-center max-w-md transition-transform duration-300 ease-in-out hover:bg-red-600 hover:text-white">
+      <p className="mb-4">
+        L`Ecole 241 m`a permis d'explorer de nouveaux horizons, de rencontrer des personnes inspirantes et de développer mes compétences. J`ai eu l`opportunité d`apprendre dans un environnement dynamique et bienveillant, ce qui m`a permis de m`épanouir pleinement. Je suis reconnaissant(e) pour tout ce que j`ai pu vivre et apprendre grâce à cette école.
+      </p>
+      <div className="flex items-center justify-center gap-3">
+        <Image
+          className="rounded-full bg-black animate-bounce"
+          src="/img1.png"
+          alt="Julie"
+          width={70}
+          height={70}
+        />
+        <div>
+          <p className="font-bold">Julie</p>
+          <p className="text-black">Freelancer développeur web</p>
+        </div>
+      </div>
+    </div>
+
+    <div className="bg-slate-100 p-6 rounded-2xl text-center max-w-md transition-transform duration-300 ease-in-out hover:bg-red-600 hover:text-white">
+      <p className="mb-4">
+        L`Ecole 241 m`a permis de découvrir ma passion pour les sciences et la technologie. Grâce à ses enseignants passionnés, j`ai pu explorer de nouveaux domaines et développer mes compétences. Aujourd`hui, je suis reconnaissant envers cette école qui m`a ouvert de nouvelles perspectives et m`a aidé à me réaliser pleinement.
+      </p>
+      <div className="flex items-center justify-center gap-3">
+        <Image
+          className="rounded-full bg-black animate-bounce"
+          src="/img2.png"
+          alt="Sabile"
+          width={70}
+          height={70}
+        />
+        <div>
+          <p className="font-bold">Sabile</p>
+          <p className="text-black">Référent Digital</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+   
   <Section8/>
          <Footer/>
        </body>

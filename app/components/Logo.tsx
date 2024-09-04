@@ -11,7 +11,7 @@ import Image from "next/image";
         
         <section>
         <Image
-          className="flex text-center relative  left-28 "
+          className="sm:flex-col md:flex-row flex text-center relative  sm:left-28 "
           src="/images.jpg"
           alt=""
           width={150}

@@ -7,8 +7,8 @@ export const Footer= () => {
 
     return (
         <>
-         <footer className="mt-36 bg-black text-white text-sm w-full">
-  <div className="flex flex-col lg:flex-row items-center lg:items-start justify-around gap-10 p-8">
+         <footer className=" mt-36 bg-black text-white text-sm w-full">
+  <div className="flex flex-col lg:flex-row items-center lg:items-start justify-around gap-28 p-8">
     <div className="mb-8 lg:mb-0">
       <Logo />
     </div>

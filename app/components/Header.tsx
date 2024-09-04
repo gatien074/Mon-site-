@@ -10,11 +10,11 @@ import motion from "framer-motion";
 export const Header = () => {
   return (
     <>
-      <header className={style.header}>
-        <div className={style.header_div}>
+      <header className="flex flex-col md:flex-row md:justify-around  p-2">
+        <div className="flex flex-col md:flex-row gap-3">
           <div className={style.dropdown}>
             <button className={style.contain} >
-              <svg className="animate-bounce"
+              <svg className="animate-bounce "
                 xmlns="http://www.w3.org/2000/svg"
                 width="36"
                 height="36"
@@ -71,7 +71,7 @@ export const Header = () => {
                 <path d="M19.285 23.58a.999.999 0 0 1-.785-1.618l2.026-2.58a1 1 0 0 1 1.573 1.236l-2.027 2.58a1 1 0 0 1-.787.382" />
                 <path d="M21.313 25.101a1 1 0 0 1-1-1v-4.1a1 1 0 1 1 2 0v4.1a1 1 0 0 1-1 1m24.581.131c-1.594 0-4.688-.45-7.753-3.426a1 1 0 1 1 1.392-1.436c3.522 3.419 6.936 2.842 7.078 2.815a1.004 1.004 0 0 1 1.165.796a.996.996 0 0 1-.785 1.167a6 6 0 0 1-1.097.084m-19.904 0a6 6 0 0 1-1.098-.084a1 1 0 0 1 .38-1.963c.162.03 3.567.594 7.078-2.815a1 1 0 0 1 1.392 1.436c-3.065 2.975-6.159 3.426-7.753 3.426m28.77 33.571q-.077 0-.153-.011a1 1 0 0 1-.837-1.139c.008-.057.827-5.74-2.13-9.177c-1.475-1.715-3.689-2.613-6.585-2.67c-3.31 2.186-6.029 3.547-9.126 3.59h-.217c-3.1-.043-5.816-1.404-9.126-3.59c-2.896.057-5.11.955-6.586 2.67c-2.956 3.436-2.138 9.12-2.129 9.177a1 1 0 0 1-1.976.303c-.042-.27-.973-6.633 2.58-10.775c1.923-2.241 4.752-3.377 8.408-3.377a1 1 0 0 1 .554.168c3.154 2.102 5.66 3.41 8.383 3.424c2.722-.013 5.229-1.322 8.383-3.424a1 1 0 0 1 .555-.168c3.656 0 6.484 1.135 8.407 3.377c3.554 4.142 2.622 10.506 2.581 10.775a1 1 0 0 1-.986.847" />
               </svg>{" "}
-              Alumnis
+                Alumnis
               <i></i>
              </button>
                 <ul className={style.dropdown_content}>
@@ -105,6 +105,7 @@ export const Header = () => {
           </div>
           <button className={style.cta2}>
             <Image
+            className={style.imageVideo}
               src="/camera-video-alt.svg"
               alt=""
               width={20}
@@ -177,14 +178,14 @@ export const Header = () => {
             </Link>
           </div>
 
-          <div className="flex w-10 h-10 justify-center text-center relative top-1 right-10 ">
+          <div className="flex w-10 h-10 justify-center text-center relative top-1 right-10  ">
             <Image
               src="/21495917-google-traduction-logo-symbole-noir-conception-mobile-app-vecteur-illustration-gratuit-vectoriel-removebg-preview.png"
               alt=""
               width={75}
               height={40}
             ></Image>
-            <p className="flex justify-center text-center m-auto"> FR</p>
+            <p className="sm:flex justify-center sm:w-full sm:text-center m-auto"> FR</p>
 
             <Link href="">
               <svg
