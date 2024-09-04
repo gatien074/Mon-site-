@@ -2,8 +2,9 @@
       "use client";
 
 import React, { useState } from 'react';
+import Main from '../components/Main';
+import Footer from '../components/Footer';
 import Draggable from 'react-draggable';
-import { Header } from '../components/Header';
 import Image from 'next/image';
 import DropdownMenu from '../components/effets';
 import AnimatedTextSection from '../components/carousel';
@@ -20,7 +21,7 @@ export default function Contact() {
 
     return (
         <>
-            <Header />
+            <Main />
             <AnimatedTextSection />
             <section className="bg-black w-full h-auto md:h-[500px] flex flex-col md:flex-row justify-between items-center p-6 md:p-10 border-inherit">
                 <div className="flex-1 flex flex-col items-center mb-8 md:mb-0">
@@ -134,6 +135,7 @@ export default function Contact() {
                 
                 </div>
             </section>
+            <Footer />
         </>
     );
 }

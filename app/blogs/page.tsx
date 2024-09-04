@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import Main from "../components/Main";
+import { Footer } from "../components/Footer";
 import Slider from "../components/Slider"; // Assurez-vous que le chemin est correct
 import NewsSection from "../components/NewsSection";
 import VideoPlayer from "../components/videosplayer"; // Assurez-vous que cela correspond à votre composant
@@ -15,19 +17,24 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      <main className="relative min-h-screen">
+      <Main/>
+      <main className="relative min-h-screen" style={{ backgroundColor: 'white' }}>
         <Slider images={images} />
 
-        <div className="relative bg- bg-center" style={{ backgroundImage: "url('/200w.webp')" }}>
-          <div className="bg-opacity-1 bg-blue-500">
+        <div className="relative bg- bg-center" style={{ backgroundImage: "')" }}>
+          <div className="bg-opacity-200 bg-black">
             <NewsSection />
           </div>
 
-          <div className="flex justify-center py-8">
-            <VideoPlayer src="/video.mp4" width={500} />
+          <div className="flex flex-row px-12 justify-center py-8 mx-auto">
+            <VideoPlayer src="/video.mp4" width={600} />
+            <VideoPlayer src="/video.mp4" width={600} />
+            <VideoPlayer src="/video.mp4" width={600} />
           </div>
         </div>
       </main>
+     
+      <Footer />
     </>
   );
 };

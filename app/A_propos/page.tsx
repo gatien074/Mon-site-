@@ -1,4 +1,5 @@
-import Header from '../components/Header';
+import Main from "../components/Main";
+import Footer from "../components/Footer";
 import Section1 from '../components/section1';
 import Section2 from '../components/section2';
 import Section3 from '../components/section3';
@@ -9,7 +10,7 @@ import Section7 from '../components/section7';
 
 const A_propos = () => (
   <>
-    <Header />
+    <Main />
     <Section1 />
     <Section2 />
     <Section3 />
@@ -17,6 +18,7 @@ const A_propos = () => (
     <Section5 />
     <Section6 />
     <Section7 />
+    <Footer/>
   </>
 );
 

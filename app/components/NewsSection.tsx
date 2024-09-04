@@ -51,8 +51,8 @@ const NewsSection: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 py-16">
-      <h2 className="text-xl mb-8 text-white text-center">Découvrez nos actualités</h2>
-      <div className="relative w-full h-80">
+      <h2 className="text-xl mb-8 text-black text-center">Découvrez nos actualités</h2>
+      <div className="relative bg-white w-full h-80">
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="relative w-72 h-72 overflow-hidden">
             <div className="absolute inset-0 flex items-center justify-center">
@@ -70,8 +70,19 @@ const NewsSection: React.FC = () => {
                         width={200}
                         height={200}
                         className="w-24 h-24 rounded-full object-cover"
+                      
                       />
+                       <Image
+                        src={news.src}
+                        alt={news.title}
+                        width={200}
+                        height={200}
+                        className="w-24 h-24 rounded-full object-cover"
+                      
+                      />
+                    
                     </div>
+                    
                   ))}
                 </div>
               </div>
@@ -95,7 +106,7 @@ const NewsSection: React.FC = () => {
               </p>
               <a
                 href={news.link}
-                className="bg-white text-black py-2 px-4 rounded hover:bg-gray-200 transition-colors duration-300"
+                className="bg-white text-black py-2 px-4 rounded hover:bg-red-700 transition-colors duration-300"
               >
                 Découvrir plus
               </a>
