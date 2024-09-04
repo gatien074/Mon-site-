@@ -15,17 +15,18 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-    
-
-      <main className="relative z-10">
+      <main className="relative min-h-screen">
         <Slider images={images} />
-        <div className="bg-cover" style={{ backgroundImage: "url('/back.gif')" }}>
-      <NewsSection />
-      <div className="flex-auto justify-center">
-        <VideoPlayer src="/video.mp4" width={(500)} />
-  
-      </div>
-    </div>
+
+        <div className="relative bg- bg-center" style={{ backgroundImage: "url('/200w.webp')" }}>
+          <div className="bg-opacity-1 bg-blue-500">
+            <NewsSection />
+          </div>
+
+          <div className="flex justify-center py-8">
+            <VideoPlayer src="/video.mp4" width={500} />
+          </div>
+        </div>
       </main>
     </>
   );

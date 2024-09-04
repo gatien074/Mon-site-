@@ -1,0 +1,12 @@
+.card {
+  perspective: 1000px; /* Crée un contexte 3D pour les enfants */
+  transition: transform 0.6s;
+}
+
+.cardContent {
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: rotateY(360deg); /* Applique la rotation 3D à la carte entière */
+}
