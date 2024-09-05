@@ -62,6 +62,7 @@ export default function A_propos() {
               ouverte à tout le monde
             </p>
           </div>
+          
           <div className={Styles.section3_22}>
             <h1 className={Styles.section3_2h1}>Port-Gentil</h1>
             <p className={Styles.section3_2p}>

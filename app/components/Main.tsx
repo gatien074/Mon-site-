@@ -10,7 +10,7 @@ const Main =()=>{
   return (
 
     <>
-    <section className="scroll-ml-6 snap-start s">
+    <section className={style.main}>
   <Logo />
       <ul className=" md:flex-row sm:flex  sm:mt-9 sm:gap-9 justify-center ">
         <li>
