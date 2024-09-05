@@ -9,7 +9,6 @@ export default function A_propos() {
       <Header />
       <section className={Styles.section1}>
         <h1 className={Styles.section1h1}>A propos</h1>
-        <Image src="/code.jpg" alt="" width={400} height={400}></Image>
       </section>
       <section className={Styles.section2}>
         <div>
@@ -253,7 +252,9 @@ export default function A_propos() {
         <div className={Styles.section7_2}>
           <div className={Styles.section7_2d}>
             <Image src="/ok.svg" alt="" width={20} height={20}></Image>
-            <h1 className={Styles.section7_2dh1}>Inscription et tests en ligne</h1>
+            <h1 className={Styles.section7_2dh1}>
+              Inscription et tests en ligne
+            </h1>
           </div>
           <div className={Styles.section7_2d}>
             <Image src="/ok.svg" alt="" width={20} height={20}></Image>
