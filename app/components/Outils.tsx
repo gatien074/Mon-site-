@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import Footer from './Footer';
 import Logo from './Logo';
+import Anime from '../components/Anime';
 
 const Outils = () => {
   return (
@@ -10,68 +11,7 @@ const Outils = () => {
         <h1 className="text-2xl sm:text-3xl lg:text-4xl text-white text-center p-6 sm:p-12 font-bold">
           NOS OUTILS
         </h1>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 text-white">
-          <div className="text-center animate-pulse">
-            <Image
-              className="rounded-full p-2 sm:p-4 mx-auto hover:animate-bounce"
-              src="/JavaScript.png"
-              alt="JavaScript"
-              width={100}
-              height={100}
-            />
-            <p className="mt-2 text-sm sm:text-base">JavaScript</p>
-          </div>
-          <div className="text-center animate-pulse">
-            <Image
-              className="rounded-full p-2 sm:p-4 mx-auto hover:animate-bounce"
-              src="/Laravel.png"
-              alt="Laravel"
-              width={100}
-              height={100}
-            />
-            <p className="mt-2 text-sm sm:text-base">Laravel</p>
-          </div>
-          <div className="text-center animate-pulse">
-            <Image
-              className="rounded-full p-2 sm:p-4 mx-auto hover:animate-bounce"
-              src="/Nextjs.png"
-              alt="Next.js"
-              width={100}
-              height={100}
-            />
-            <p className="mt-2 text-sm sm:text-base">Next.js</p>
-          </div>
-          <div className="text-center animate-pulse">
-            <Image
-              className="rounded-full p-2 sm:p-4 mx-auto hover:animate-bounce"
-              src="/PHP-logo.svg.png"
-              alt="PHP"
-              width={100}
-              height={100}
-            />
-            <p className="mt-2 text-sm sm:text-base">PHP</p>
-          </div>
-          <div className="text-center animate-pulse">
-            <Image
-              className="rounded-full p-2 sm:p-4 mx-auto hover:animate-bounce"
-              src="/React.png"
-              alt="React"
-              width={100}
-              height={100}
-            />
-            <p className="mt-2 text-sm sm:text-base">React</p>
-          </div>
-          <div className="text-center animate-pulse">
-            <Image
-              className="rounded-full p-2 sm:p-4 mx-auto hover:animate-bounce"
-              src="/Vuejs.png"
-              alt="Vue.js"
-              width={100}
-              height={100}
-            />
-            <p className="mt-2 text-sm sm:text-base">Vue.js</p>
-          </div>
-        </div>
+        <Anime/>
       </section>
 
       <section className="p-8 sm:p-10 lg:p-12">

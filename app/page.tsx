@@ -18,7 +18,7 @@ export default function Home() {
       <Header />
       <Main />
       <section className="container mx-auto grid sm:grid-cols-2 lg:grid-cols-2 gap-8 mt-10">
-  <div className="w-full ">
+  <div className="w-full  sm:ml-36">
     <p className="text-3xl sm:text-4xl md:text-5xl font-bold ">
       Ecole 241, Plus qu’une <br />
       formation un <span className="text-red-600">métier</span>

@@ -3,11 +3,7 @@
 @tailwind utilities;
 
 
-@layer utilities {
-  .animate-marquee {
-    animation: marquee 10s linear infinite;
-  }
-}
+
 
 
 @layer utilities {
@@ -21,11 +17,47 @@
   100% { background-color: #000000; } /* noir */
 }
 
+/*Anime texte et icone */
+
+
+
+@layer utilities {
+  .animate-marquee {
+    animation: marquee 10s linear infinite;
+  }
+}
+
 @keyframes marquee {
   70% { transform: translateY(75%); }
   45% { transform: translateY(-100%); }
 }
 
+
+/*icone */
+
+
+@layer utilities {
+  .icon-marquee {
+    animation: outils 10s linear infinite;
+  }
+}
+
+@keyframes outils{
+  70% { transform: translateX(25%); }
+  45% { transform: translateX(-25%); }
+}
+
+
+@layer utilities {
+  .outils-marquee {
+    animation: outils 10s linear infinite;
+  }
+}
+
+@keyframes outils{
+  70% { transform: translateX(25%); }
+  45% { transform: translateX(-25%); }
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');

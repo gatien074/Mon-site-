@@ -4,7 +4,7 @@ import Outils from "./Outils"
 import {motion} from 'framer-motion';
 import Main from '../components/Main';
 import Footer from '../components/Footer';
-
+import Icon from '../components/Icon';
 
 export const Refe = ()=>{
     return(
@@ -12,19 +12,19 @@ export const Refe = ()=>{
       <body>
 
       <Main/>
-      <section className="px-4 py-8 lg:flex lg:items-center lg:justify-between">
-  <div className="text-center lg:text-left lg:w-1/2">
-    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold items-center">
+      <section className="lg:flex lg:items-center lg:justify-between w-full">
+  <div className="text-center lg:text-left lg:w-1/2 py-12 px-12 ">
+    <h1 className="text-6xl md:text-4xl lg:text-5xl font-bold items-center text-black">
      Référent digital.
     </h1>
-    <p className="relative mt-4 md:mt-6 lg:mt-8 text-white m-5">
+    <p className="relative mt-4 md:mt-6 lg:mt-8 text-black ">
     Concentre-toi sur ce qui est nécessaire pour acquérir une compétence <br /> spécifique et applicable. Tu seras mieux outillé pour construire une <br /> carrière.
     </p>
-   
+  
   </div>
-
+    
 </section>
-<section className="m-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-28 px-4">
+<section className="m-auto grid grid-cols-1 lg:grid-cols-2 gap-8 py-12 px-12">
   <div className="flex flex-col justify-center">
     <h1 className="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left font-bold mt-12">
     +100 RÉFÈRENTS<br className="hidden md:block" /> FORMÉS
@@ -46,29 +46,11 @@ export const Refe = ()=>{
     />
   </div>
 </section>
-<section className="bg-black p-10">
+<section className="bg-black p-10 ">
   <h1 className="text-2xl text-white text-center p-12 font-bold">
     NOS OUTILS
   </h1>
-  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 text-white">
-    <div className="text-center animate-pulse">
-      <Image className="rounded-full p-4 mx-auto hover:animate-bounce" src="/logo-cava.jpg" alt="" width={100} height={100} />
-      <p>Canva</p>
-    </div>
-    <div className="text-center animate-pulse">
-      <Image className="rounded-full p-4 mx-auto hover:animate-bounce" src="/photoshop.png" alt="Laravel" width={100} height={100} />
-      <p>Photoshop</p>
-    </div>
-    <div className="text-center animate-pulse">
-      <Image className="rounded-full p-4 mx-auto hover:animate-bounce" src="/logo-Html.png" alt="Next.js" width={100} height={100} />
-      <p>Html</p>
-    </div>
-    <div className="text-center animate-pulse">
-      <Image className="rounded-full p-4 mx-auto hover:animate-bounce" src="/PHP-logo.svg.png" alt="PHP" width={100} height={100} />
-      <p>Css</p>
-    </div>
-   
-  </div>
+  <Icon/>
 </section>
 
 <section className="p-10">

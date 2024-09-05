@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Section1_2 = () => {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 m-48 ">
       {/* Titre et sous-titre */}
       <div className="text-center sm:text-left mb-12">
         <h1 className="text-3xl sm:text-4xl font-bold">Nos cohortes</h1>

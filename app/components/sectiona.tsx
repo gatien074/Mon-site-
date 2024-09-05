@@ -8,10 +8,10 @@ export const section2 = () => {
         <>
        <section className='container m-auto  mt-12  bg-black text-white py-12 px-4 sm:px-14 h-auto'>
   <div className=' w-full md:w-1/2 flex-col md:flex-row sm:ml-10'>
-    <h1 className='md:text-3xl sm:text-4xl font-bold mt-5 sm:mt-10 mb-6'>
+    <h1 className='md:text-5xl sm:text-7xl ml-14 font-bold mt-5 sm:mt-10 mb-6'>
       Notre programme
     </h1>
-    <p className='text-sm sm:text-base leading-relaxed'>
+    <p className='text-sm sm:text-base leading-relaxed ml-14'>
       Ecole 241, c’est une formation en informatique d’excellence pour tous et toutes. Au programme de cette école
       différente et innovante : une approche par projets pour progresser et développer des compétences techniques
       et humaines recherchées sur le marché du travail.

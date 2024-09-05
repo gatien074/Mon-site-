@@ -5,7 +5,7 @@ import Logo from './Logo'; // Ensure the Logo component path is correct
 
 const Main = () => {
   return (
-    <header className="bg-black text-white w-full top-0 z-10 p-4">
+    <header className="bg-black text-white w-full top-0 z-10 p-4 border-b-2 border-x-white">
       <nav className="flex flex-col md:flex-row md:justify-between items-center sm:items-center " >
         {/* Logo */}
         <div className="mb-4 md:mb-0">
@@ -13,7 +13,7 @@ const Main = () => {
         </div>
 
         {/* Navigation Links */}
-        <ul className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0">
+        <ul className="flex flex-col  items-center lg:items-start md:flex-row md:space-x-8 space-y-4 md:space-y-0">
           <li>
             <Link
               className="hover:text-red-500 hover:scale-110 active:text-red-500 text-sm transition-transform duration-200"
@@ -25,7 +25,7 @@ const Main = () => {
           <li>
             <Link
               className="hover:text-red-500 hover:scale-110 active:text-red-500 text-sm transition-transform duration-200"
-              href="/formations"
+              href="/Detaille"
             >
               Nos formations
             </Link>
@@ -33,7 +33,7 @@ const Main = () => {
           <li>
             <Link
               className="hover:text-red-500 hover:scale-110 active:text-red-500 text-sm transition-transform duration-200"
-              href="/formations"
+              href=""
             >
               Nos campus
             </Link>

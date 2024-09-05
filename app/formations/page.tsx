@@ -13,25 +13,20 @@ const Formations = ()=>{
         <Main />
 
       <section className="px-4 py-8 sm:flex lg:items-center lg:justify-between bg-black">
-  <div className="text-center lg:text-left lg:w-1/2">
+  <div className="text-center lg:text-left lg:w-1/2 py-8 px-8">
     <h1 className= "text-3xl text-white md:text-4xl lg:text-5xl font-bold items-center">
       Engagez <span className={style.span}>un développeur  expérimenté</span> pour rejoindre votre équipe
     </h1>
-    <p className="relative mt-4 md:mt-6 lg:mt-8 text-white m-5">
+    <p className="relative mt-4 md:mt-6 lg:mt-8 text-white ">
       Exprimez vos besoins, et nous vous fournirons une sélection de <br className="hidden md:block" /> candidats qualifiés dans les 48 heures.
     </p>
-    <button
-      className="bg-red-600 w-full md:w-44 h-12 text-white border-2 rounded border-red-600 mt-4 lg:mt-8 hover:scale-105 transform duration-75 hover:bg-black hover:border-black"
-      type="button"
-    >
-      En savoir plus
-    </button>
+   
   </div>
 </section>
 
 
 <section className="m-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-28 px-4">
-  <div className="flex flex-col justify-center">
+  <div className="flex flex-col justify-center py-8 px-8">
     <h1 className="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left font-bold mt-12">
       +100 DEVELOPPEURS <br className="hidden md:block" /> FORMÉS
     </h1>
@@ -44,7 +39,7 @@ const Formations = ()=>{
   </div>
   <div className="mt-8 lg:mt-0 flex justify-center lg:justify-end">
     <Image
-      className="w-full lg:w-8/12 rounded-xl object-cover"
+      className="w-full lg:w-8/12 rounded-xl object-cover mt-12"
       src="/eCOLE47_1297919770577707_5409795518867950751_n-1536x1024.jpeg"
       alt="Description de l'image"
       width={1000}

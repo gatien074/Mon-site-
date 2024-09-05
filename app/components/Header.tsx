@@ -10,7 +10,7 @@ import motion from "framer-motion";
 export const Header = () => {
   return (
     <>
-      <header className="flex flex-col md:flex-row md:justify-around  p-2">
+      <header className="flex flex-col md:flex-row md:justify-around p-2">
         <div className="flex flex-col md:flex-row gap-3">
           <div className={style.dropdown}>
             <button className={style.contain} >
@@ -111,9 +111,9 @@ export const Header = () => {
               width={20}
               height={20} ></Image>{" "} <p className={style.paragraphe}>Participer au réunion d’information en ligne </p></button>
         </div>
-        <div className={style.icon}>
-          <div className="flex mr-24 w-full">
-            <Link href="https://www.facebook.com/Ecole241/?locale=fr_FR">
+        <div className="flex ">
+          <div className="flex mr-24 w-full ml">
+            <Link href="https://www.facebookcom/Ecole241/?locale=fr_FR">
               <svg
                 className="m-4 w-5 h-5 hover:scale-105 "
                 xmlns="http://www.w3.org/2000/svg"
