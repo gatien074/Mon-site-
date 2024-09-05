@@ -2,11 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 
-export const Section8 = () => {
+export const section2 = () => {
 
     return (
         <>
-       <section className='container mx-auto    bg-black text-white py-12 px-6 sm:px-14 h-auto'>
+       <section className='container m-auto  mt-12  bg-black text-white py-12 px-4 sm:px-14 h-auto'>
   <div className=' w-full md:w-1/2 flex-col md:flex-row sm:ml-10'>
     <h1 className='md:text-3xl sm:text-4xl font-bold mt-5 sm:mt-10 mb-6'>
       Notre programme
@@ -57,5 +57,4 @@ export const Section8 = () => {
     )
 }
 
-export default Section8;
-
+export default section2;
