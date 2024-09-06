@@ -1,0 +1,382 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+  .body {
+    font-family: 'Lora', italic, serif;
+   background-color: rgba(0, 0, 0, 0.522);
+  
+  }
+
+/* partie header  */
+
+/* cta pour le button participation  */
+.cta2{
+  border: 2px solid #000;
+  align-items: center;
+  height: 32px;
+  width: 375px;
+  margin-top: 12px;
+  
+}   
+
+/* header div le parent des buttons de alumnis et de participation */
+
+/* Partie main  */
+
+.main{
+  display: flex;
+}
+
+.imageVideo{
+  margin-left: 5px;
+  margin-top: 4px;
+}
+
+/* le parent liste  */
+
+.main_liste{
+   display: flex;
+   margin-top: 35px;
+   gap: 23px;
+  transform: scale(1);
+  
+}
+
+/* les sections  */
+
+.première_section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* partie section text  */
+
+.section_text{
+  font-size: 300%;
+  margin-left: 18%;
+  margin-top: 10%;
+ font-weight: bold;
+}
+.section_texte2{
+  margin-left: 18%;
+  font-size: 90%;
+  margin-top: 2%;
+}
+
+.span{
+  color: #f00707;
+  text-decoration: underline;
+}
+
+.section_images{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* deuxième section  */
+
+.deuxième_section{
+  background-color: #000;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr;
+ margin-top: 5%;
+}
+
+.section_test{
+  margin-left: 5%;
+  font-size: 300%;
+  font-weight: bold;
+}
+
+.section_test2{
+  margin-left: 5%;
+ font-size: 100%;
+}
+
+.sections_images{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 2%;
+}
+
+.section_h1{
+  margin-left: 16%;
+  font-size: 300%;
+  font-weight: bold;
+  margin-top: 16%;
+}
+
+.section_p{
+  margin-left: 16%;
+  font-size: 95%;
+}
+
+/* nos cohortes  */
+
+.boxe{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding-bottom: 5%;
+}
+
+/* Status des promos formations */
+
+.section_titre{
+  font-weight: bold;
+  margin-left: 5%;
+  font-size: 300%;
+}
+
+.titres{
+  margin-left: 5%;
+}
+.section_v{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5%;
+}
+
+/* SECTION 6 */
+
+
+.section2_zone{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 16%;
+}
+
+.section7{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12%;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
+ 
+
+
+
+
+/* partie icons  formation developpeur  */
+.icon{
+    display: flex;
+    
+}
+
+.contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   font-size: 12px;
+    line-height: 9px;
+   height: 32px;
+    margin: 23px;
+    border: 2px solid black;
+
+}
+
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    margin-top: 12px;
+    
+  
+  }
+  .dropdown .contain {
+    font-size: 16px;
+    border: 2px solid #000;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 12px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .header a:hover, .dropdown:hover .contain {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #fff9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    max-height: 300px;
+    overflow-y: auto;
+    
+  }
+  .dropdown_content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: background-color 0.3s;
+  }
+  .dropdown_content a:hover {
+    background-color: #f00707;
+  }
+  .dropdown:hover .dropdown_content {
+    display: block;
+  }
+
+  .paragraphe{
+position: relative;
+bottom: 23px;
+left: 7px;
+max-width: 100%;
+
+    
+  }
+
+  .paragraphe:hover{
+    color: #ff0000;
+  }
+ 
+
+  .lien{
+    margin-top: 35px;
+
+  }
+
+  .lien:hove{
+     background-color: #ffffff;
+     color: #000000;
+  }
+
+
+  .site{
+    opacity: 0.3;
+    width: 500px;
+    height: 70vh;
+  }
+
+  .menu1{
+    float: left;
+    overflow: hidden;
+
+  }
+
+  .menu1 .menu{
+    font-size: 16px;
+    border: 2px solid #000000;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    
+  }
+
+
+  .sous_menu li:hover
+{
+    color: #ff0000e8;
+}
+
+
+  .sous_menu{
+    display: none;
+    position: absolute;
+    width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 0, 0, 0.2);
+    z-index: 1;
+    overflow-y: auto;
+
+  }
+
+  .sous_menu li{
+    float: none;
+    color: rgb(0, 0, 0);
+    padding: 8px 8px;
+    display: block;
+    text-align: left;
+    transition: background-color 0.3s;
+    
+  }
+
+  .sous_menu li:hover{
+    background-color: #ffffff;
+   
+  }
+
+  .menu1:hover .sous_menu{
+    display: block;
+   
+  }
+ 
+  .nom:hover{
+    
+    color: #e11111b5;
+  }
+
+  .main{
+    width: 100%;
+    background-color: #000;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position: sticky;
+    color: #fff;
+  
+  }
+
+  /* partie dévelopeur  */
+
+  .span{
+    color: #ff0000;
+  }
+
+  .h1{
+     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #fff;
+   
+  }
+
+
+  .section{
+    background-color: #000000dc;
+    background-image: url(../public/generated.svg );
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+  }
+
+ @media  (min-width: 360px) and (max-width: 768px)  {
+  
+      .main{
+        display: flex; 
+        flex-direction: column;
+        padding: 23px;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+      }
+
+      .cta2{
+        width: 100%;
+      }
+ }
