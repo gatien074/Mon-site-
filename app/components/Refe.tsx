@@ -92,7 +92,7 @@ export const Refe = ()=>{
     </div>
     <div className="p-6">
       <h3 className="text-red-600 text-xl font-bold mb-4">
-      Élaborer et piloter des campagnes d'acquisition
+      Élaborer et piloter des campagnes d`acquisition
       </h3>
       <ul className="list-disc pl-4">
         <li>Établir une stratégie de référencement naturel et payant</li>
