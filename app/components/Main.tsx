@@ -34,7 +34,7 @@ const Main = () => {
           <li>
             <Link
               className="hover:text-red-500 hover:scale-110 active:text-red-500 text-sm transition-transform duration-200"
-              href=""
+              href="/campuspog"
             >
               Nos campus
             </Link>
@@ -44,7 +44,7 @@ const Main = () => {
               className="hover:text-red-500 hover:scale-110 active:text-red-500 text-sm transition-transform duration-200"
               href="/A_propos"
             >
-              À propos de nous
+              À propos 
             </Link>
           </li>
           <li>

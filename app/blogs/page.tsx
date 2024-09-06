@@ -3,7 +3,7 @@
 import React from "react";
 import Main from "../components/Main";
 import { Footer } from "../components/Footer";
-import Slider from "../components/Slider"; // Assurez-vous que le chemin est correct
+// Assurez-vous que le chemin est correct
 import NewsSection from "../components/NewsSection";
 import VideoPlayer from "../components/videosplayer"; // Assurez-vous que cela correspond à votre composant
 
@@ -19,7 +19,6 @@ const HomePage: React.FC = () => {
     <>
       <Main />
       <main className="relative min-h-screen bg-white overflow-x-hidden">
-        <Slider images={images} />
 
         <div
           className="relative bg-cover bg-center"
