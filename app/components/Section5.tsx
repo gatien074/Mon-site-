@@ -8,63 +8,7 @@ import { Prompt } from "next/font/google";
 const Section5 = ()=>{
     return(
         <>
-        <section className="mt-44  bg-zinc-300 p-10  h-96">
-        <div className="relative top-10">
-          <h4 className={style.section_titre}>
-            Status des promos formations
-          </h4>
-          <p className={style.titres}>
-            Nous vous listons les promotions en cours et celle avenirs
-          </p>
-        </div>
-        <div className= {style.section_v}>
-          <div className="bg-slate-100 relative left-16  w-80 p-4  rounded-xl drop-shadow-2xl ">
-            <p className="text-sm font-bold">Développement web et web mobile</p>
-            <p className="text-sm font-bold">Promo 5 2023 - 2024</p>
-            <div className="flex">
-              <p className="text-sm">Ville: Libreville</p>
-              <p className="relative left-12 text-sm">
-                PROMO EN COURS{" "}
-                <button
-               
-                  className="bg-red-600 rounded-full w-5 h-4"
-                  type="button"
-                ></button>
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-slate-100  relative left-16  w-80 p-4 rounded-xl  drop-shadow-2xl">
-            <p className="text-sm font-bold">Développement web et web mobile</p>
-            <p className="text-sm font-bold">Promo 5 2023 - 2024</p>
-            <div className="flex">
-              <p className="text-sm">Ville: Moanda</p>
-              <p className="relative left-12 text-sm">
-                PROMO EN COURS{" "}
-                <button
-                  className="bg-green-600 rounded-full  w-5 h-4"
-                  type="button"
-                ></button>
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-slate-100  relative left-16 w-80 p-4 rounded-xl  drop-shadow-2xl">
-            <p className="text-sm font-bold">Réferent Digital</p>
-            <p className="text-sm font-bold">Promo 5 2023 - 2024</p>
-            <div className="flex  ">
-              <p className="text-sm">Ville: Libreville</p>
-              <p className="relative left-12 text-sm">
-                PROMO EN COURS{" "}
-                <button
-                  className="bg-red-600 rounded-full  w-5 h-4"
-                  type="button"
-                ></button>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+       
       </>
     )
 }

@@ -4,7 +4,7 @@ import Main from "../components/Main"
 import Formations from "../components/Formations"
 
 
-export default function formation (){
+export default function formationpage (){
     return (
         <>
 

@@ -10,11 +10,11 @@ import motion from "framer-motion";
 export const Header = () => {
   return (
     <>
-      <header className={style.header}>
-        <div className={style.header_div}>
+      <header className="flex flex-col md:flex-row md:justify-around  p-2">
+        <div className="flex flex-col md:flex-row gap-3">
           <div className={style.dropdown}>
             <button className={style.contain} >
-              <svg className="animate-bounce"
+              <svg className="animate-bounce "
                 xmlns="http://www.w3.org/2000/svg"
                 width="36"
                 height="36"
@@ -59,7 +59,7 @@ export const Header = () => {
                 <path d="M36.74 23.37c-.02.01-.03.03-.04.04c-.13.16-.29.26-.47.31q-.06.03-.12.03c-.06.02-.11.02-.17.02s-.12 0-.17-.02q-.06 0-.12-.03a.9.9 0 0 1-.36-.19a.8.8 0 0 1-.15-.16c-1.65-1.86-5.85-2.25-7.85-2.26c-.19 0-.36.01-.5.01a.98.98 0 0 1-.73-.27a1 1 0 0 1-.31-.72v-8.47c0-.56.45-1 1-1s1 .44 1 1v7.47c.22 0 .48.01.76.03c2.04.12 5.36.57 7.43 2.24c.28.21.53.45.76.72c.31.36.32.88.04 1.25" />
                 <path d="M46.13 11.66v8.47c0 .27-.11.53-.3.72c-.2.18-.44.28-.74.28c-.14-.01-.31-.01-.49-.01c-2.01 0-6.22.38-7.86 2.25c-.02.01-.03.03-.04.04c-.13.16-.29.26-.47.31q-.06.03-.12.03c-.06.02-.11.02-.17.02s-.12 0-.17-.02q-.06 0-.12-.03a.9.9 0 0 1-.36-.19a.8.8 0 0 1-.15-.16a.994.994 0 0 1 .04-1.25c.23-.27.48-.51.76-.72c2.07-1.67 5.39-2.12 7.43-2.24c.28-.02.54-.03.76-.03v-7.47c0-.56.45-1 1-1s1 .44 1 1" />
                 <path
-                  fill="none"
+                  fill="none" 
                   stroke="#000"
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -71,7 +71,7 @@ export const Header = () => {
                 <path d="M19.285 23.58a.999.999 0 0 1-.785-1.618l2.026-2.58a1 1 0 0 1 1.573 1.236l-2.027 2.58a1 1 0 0 1-.787.382" />
                 <path d="M21.313 25.101a1 1 0 0 1-1-1v-4.1a1 1 0 1 1 2 0v4.1a1 1 0 0 1-1 1m24.581.131c-1.594 0-4.688-.45-7.753-3.426a1 1 0 1 1 1.392-1.436c3.522 3.419 6.936 2.842 7.078 2.815a1.004 1.004 0 0 1 1.165.796a.996.996 0 0 1-.785 1.167a6 6 0 0 1-1.097.084m-19.904 0a6 6 0 0 1-1.098-.084a1 1 0 0 1 .38-1.963c.162.03 3.567.594 7.078-2.815a1 1 0 0 1 1.392 1.436c-3.065 2.975-6.159 3.426-7.753 3.426m28.77 33.571q-.077 0-.153-.011a1 1 0 0 1-.837-1.139c.008-.057.827-5.74-2.13-9.177c-1.475-1.715-3.689-2.613-6.585-2.67c-3.31 2.186-6.029 3.547-9.126 3.59h-.217c-3.1-.043-5.816-1.404-9.126-3.59c-2.896.057-5.11.955-6.586 2.67c-2.956 3.436-2.138 9.12-2.129 9.177a1 1 0 0 1-1.976.303c-.042-.27-.973-6.633 2.58-10.775c1.923-2.241 4.752-3.377 8.408-3.377a1 1 0 0 1 .554.168c3.154 2.102 5.66 3.41 8.383 3.424c2.722-.013 5.229-1.322 8.383-3.424a1 1 0 0 1 .555-.168c3.656 0 6.484 1.135 8.407 3.377c3.554 4.142 2.622 10.506 2.581 10.775a1 1 0 0 1-.986.847" />
               </svg>{" "}
-              Alumnis
+                Alumnis
               <i></i>
              </button>
                 <ul className={style.dropdown_content}>
@@ -105,6 +105,7 @@ export const Header = () => {
           </div>
           <button className={style.cta2}>
             <Image
+            className={style.imageVideo}
               src="/camera-video-alt.svg"
               alt=""
               width={20}
@@ -177,14 +178,14 @@ export const Header = () => {
             </Link>
           </div>
 
-          <div className="flex w-10 h-10 justify-center text-center relative top-1 right-10 ">
+          <div className="flex w-10 h-10 justify-center text-center relative top-1 right-10  ">
             <Image
               src="/21495917-google-traduction-logo-symbole-noir-conception-mobile-app-vecteur-illustration-gratuit-vectoriel-removebg-preview.png"
               alt=""
               width={75}
               height={40}
             ></Image>
-            <p className="flex justify-center text-center m-auto"> FR</p>
+            <p className="sm:flex justify-center sm:w-full sm:text-center m-auto"> FR</p>
 
             <Link href="">
               <svg

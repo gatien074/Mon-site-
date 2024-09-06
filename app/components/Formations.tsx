@@ -4,11 +4,11 @@ import Outils from "./Outils"
 import {motion} from 'framer-motion';
 
 
-const Formations = ()=>{
+const Formationspage = ()=>{
     return(
     <>
-      <body>
-      <section className={`${style.section} px-4 py-8 lg:flex lg:items-center lg:justify-between`}>
+    
+     <section className={`${style.section} px-4 py-8 lg:flex lg:items-center lg:justify-between`}>
   <div className="text-center lg:text-left lg:w-1/2">
     <h1 className={`${style.h1} text-3xl md:text-4xl lg:text-5xl font-bold items-center`}>
       Engagez <span className={style.span}>un développeur  expérimenté</span> pour rejoindre votre équipe
@@ -23,10 +23,7 @@ const Formations = ()=>{
       En savoir plus
     </button>
   </div>
-
 </section>
-
-
 <section className="m-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-28 px-4">
   <div className="flex flex-col justify-center">
     <h1 className="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left font-bold mt-12">
@@ -51,9 +48,8 @@ const Formations = ()=>{
 </section>
 
         <Outils />
-      </body>
-    
+   
     </>
     )
 }
-export default Formations;
+export default Formationspage;

@@ -8,7 +8,7 @@ const Section4 =()=>{
     return(
         <>
         
-        <section className={style.section0}>
+        <section className="{style.section0}">
         <div>
           <h1 className="text-5xl font-bold relative left-28  mr-28 ">Nos cohortes</h1>
           <p className="relative left-28 mr-28 ">se former à un métier</p>
