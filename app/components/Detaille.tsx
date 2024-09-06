@@ -2,43 +2,45 @@ import Main from "../components/Main";
 import Link from 'next/link';
 import Footer from "./Footer";
 
-
-const Detaille =()=>{
-    return(
-
+const Detaille = () => {
+    return (
         <>
-        <Main/>
-        <section className="bg-gray-900 ">
-        <div className=" flex flex-col  items-center ">
-            <h1 className="text-white text-5xl  py-32 px-32 flex items-center justify-center">Développeur web</h1>
-            <button
-             className="bg-red-600 w-52 h-14 text-white animate-blink  border-2  rounded border-black  mb-32 leading-3 hover:scale-105 translate-x-0.5 duration-75 hover:bg-black ml-8 hover:border-black"
-            type="button"  
-          >
-             <Link href="/formations">en savoir plus</Link>
-            
-          </button>
-        </div>
-        </section>
-        <section>
+            <Main />
+            <section className="bg-gray-900 py-12 md:py-24">
+                <div className="flex flex-col items-center text-center px-4">
+                    <h1 className="text-white text-3xl md:text-5xl font-bold mb-6">
+                        Développeur web
+                    </h1>
+                    <Link href="/formations">
+                        <button
+                            className="bg-red-600 text-white border-2 border-black rounded mb-12 leading-3 hover:bg-black hover:border-black transform transition-transform duration-150 hover:scale-105 w-full max-w-xs md:max-w-sm h-12 md:h-14 px-4"
+                            type="button"
+                        >
+                            En savoir plus
+                        </button>
+                    </Link>
+                </div>
+            </section>
 
-          
-        <div className=" flex mt-12 flex-col items-center ">
-            <h1 className="text-black text-5xl  py-32 px-32 flex items-center justify-center">Référent digital</h1>
-            <button
-             className="bg-red-600 w-52 h-14 text-white animate-blink  border-2  rounded border-black  mb-32 leading-3 hover:scale-105 translate-x-0.5 duration-75 hover:bg-black ml-8 hover:border-black"
-            type="button"  
-          >
-             <Link href="/referents">en savoir plus</Link>
-            
-          </button>
-        </div>
-        </section>
+            <section className="py-12 md:py-24">
+                <div className="flex flex-col items-center text-center px-4">
+                    <h1 className="text-black text-3xl md:text-5xl font-bold mb-6">
+                        Référent digital
+                    </h1>
+                    <Link href="/referents">
+                        <button
+                            className="bg-red-600 text-white border-2 border-black rounded mb-12 leading-3 hover:bg-black hover:border-black transform transition-transform duration-150 hover:scale-105 w-full max-w-xs md:max-w-sm h-12 md:h-14 px-4"
+                            type="button"
+                        >
+                            En savoir plus
+                        </button>
+                    </Link>
+                </div>
+            </section>
 
-        <Footer/>
-
+            <Footer />
         </>
-    )
-}
+    );
+};
 
 export default Detaille;

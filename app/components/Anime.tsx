@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Anime() {
     return (
-      <div className="overflow-clip whitespace-nowrap " >
+      <div className="overflow-clip whitespace-nowrap  " >
         <div className="inline-block outils-marquee">       
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-32 text-white">
     <div className="text-center animate-pulse">

@@ -17,23 +17,27 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      <Main/>
-      <main className="relative min-h-screen" style={{ backgroundColor: 'white' }}>
+      <Main />
+      <main className="relative min-h-screen bg-white overflow-x-hidden">
         <Slider images={images} />
 
-        <div className="relative bg- bg-center" style={{ backgroundImage: "')" }}>
+        <div
+          className="relative bg-cover bg-center"
+          style={{ backgroundImage: "url('/your-background-image.jpg')" }} // Remplacez par l'URL correcte
+        >
           <div className="bg-opacity-200 bg-black">
             <NewsSection />
           </div>
 
-          <div className="flex flex-row px-12 justify-center py-8 mx-auto">
-            <VideoPlayer src="/video.mp4" width={600} />
-            <VideoPlayer src="/video.mp4" width={600} />
-            <VideoPlayer src="/video.mp4" width={600} />
-          </div>
+          <div className="flex flex-wrap justify-center gap-4 px-4 py-8">
+          <VideoPlayer src="/video.mp4" />
+         <VideoPlayer src="/video.mp4" />
+         <VideoPlayer src="/video.mp4" />
+         </div>
+
         </div>
       </main>
-     
+
       <Footer />
     </>
   );
