@@ -1,6 +1,9 @@
+
    import Main from "../components/Main";
 import Link from 'next/link';
-import Footer from "./Footer";
+
+import { Footer } from '../components/Footer';//+
+
 
 
 const Detaille =()=>{

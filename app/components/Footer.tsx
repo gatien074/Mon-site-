@@ -7,9 +7,11 @@ export const Footer= () => {
 
     return (
         <>
+
          <footer className="mt-36 bg-black text-white text-sm w-full ">
   <div className="flex flex-col lg:flex-row items-center lg:items-start justify-around gap-24 p-8 max-w-screen-xl mx-auto">
     <div className="mb-8 lg:mb-0 flex justify-center lg:justify-start">
+
       <Logo />
     </div>
  

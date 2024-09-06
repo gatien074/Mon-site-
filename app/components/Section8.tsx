@@ -1,11 +1,10 @@
 import Image from "next/image";
-import style from "../style.module.css";
-import section from './section1';
 
 
 const Section8 = () => {
     return(
       <section className="container mx-auto p-8 text-black">
+
   <div className="flex flex-col md:flex-row md:justify-between items-center">
     <div className="w-full md:w-1/2 p-4 text-center md:text-left">
       <h1 className="text-4xl font-bold">
@@ -14,7 +13,7 @@ const Section8 = () => {
         font confiance
       </h1>
       <p className="mt-4">
-        Vous souhaitez devenir partenaire de l'école ? Cliquez <br />
+        Vous souhaitez devenir partenaire de l`école ? Cliquez <br />
         sur le bouton ci-dessous
       </p>
       <button
@@ -70,6 +69,7 @@ const Section8 = () => {
     </div>
   </div>
 </section>
+
 
     )
 }

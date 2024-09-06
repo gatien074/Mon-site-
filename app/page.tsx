@@ -4,12 +4,12 @@ import Header from "./components/Header"
 
 import Image from "next/image";
 import Link from "next/link";
-import footer, { Footer } from "./components/Footer";
+import  { Footer } from "./components/Footer";
 import {BlinkingButton} from "./components/Buttons"
 // import {Main} from "./components/main"
 import Section2 from "./components/Section2"
 import Section4 from "./components/section4";
-import Section5 from "./components/Section5";
+
 import Section6 from "./components/Section6";
 import Section8 from "./components/Section8";
 import style  from "./style.module.css";
@@ -17,7 +17,7 @@ import Main from "./components/Main";
 import { useState } from 'react';
 import React from "react";
 import section from './components/section1';
-import Marquee from "./components/Marquee";
+
 
 
 
@@ -34,12 +34,13 @@ export default function home(){
         
      <Main/>
      <section className="container mx-auto grid sm:grid-cols-2 lg:grid-cols-2 gap-8 mt-10">
-  <div className="w-full py-10 ">
-    <p className=" sm:text-4xl md:text-7xl font-bold  ml-28">
-      Ecole 241 
+  <div className="w-full ">
+    <p className="text-3xl sm:text-4xl md:text-5xl font-bold ml-28">
+      Ecole 241, Plus qu’une <br />
+      formation un <span className="text-red-600">métier</span>
     </p>
     <div className="mt-4">
-    <p className="ml-28 text-xl mt-3 font-semibold" >Ecole 241 forme au métier du numérique dans tout le Gabon. Rejoignez un  réseau de plus de 25 000 apprenants  et apprentes. Vous souhaitez vous  aussi intégrer un parcours de formqtion Simplon au être conseillé-e dans  votre parcours ?</p>
+     
     </div>
     <div className="mt-4">
       <BlinkingButton />
@@ -154,7 +155,6 @@ export default function home(){
 
 
         <Section4/>
-        <Section5/>
         <Section6/>
         
         <section className="container mx-auto mt-24 bg-zinc-400 p-8">

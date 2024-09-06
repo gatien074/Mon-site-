@@ -7,11 +7,8 @@ import Formations from "../components/Formations"
 export default function formationpage (){
     return (
         <>
-
-
-        <Main />
+         
         <Formations />
-       
         </>
     )
 }

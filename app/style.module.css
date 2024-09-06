@@ -21,6 +21,7 @@
   height: 32px;
   width: 375px;
   margin-top: 12px;
+  
 }   
 
 /* header div le parent des buttons de alumnis et de participation */
@@ -166,6 +167,7 @@
 /* partie icons  formation developpeur  */
 .icon{
     display: flex;
+    
 }
 
 .contain{

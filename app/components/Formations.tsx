@@ -7,10 +7,12 @@ import {motion} from 'framer-motion';
 const Formationspage = ()=>{
     return(
     <>
+
     
      <section className={`${style.section} px-4 py-8 lg:flex lg:items-center lg:justify-between`}>
+
   <div className="text-center lg:text-left lg:w-1/2">
-    <h1 className={`${style.h1} text-3xl md:text-4xl lg:text-5xl font-bold items-center`}>
+    <h1 className= "text-3xl text-white md:text-4xl lg:text-5xl font-bold items-center">
       Engagez <span className={style.span}>un développeur  expérimenté</span> pour rejoindre votre équipe
     </h1>
     <p className="relative mt-4 md:mt-6 lg:mt-8 text-white m-5">

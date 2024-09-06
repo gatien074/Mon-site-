@@ -1,13 +1,11 @@
 import Image from "next/image"
-import Buttons from "./Buttons"
-import section from './section1';
+import Buttons from "./BlinkingButton"
 import style from "../style.module.css";
-import React from "react";
-
 const Section4 =()=>{
     return(
         <>
         
+
         <section className="{style.section0}">
         <div>
           <h1 className="text-5xl font-bold relative left-28  mr-28 ">Nos cohortes</h1>
@@ -69,7 +67,7 @@ const Section4 =()=>{
         </div>
         </div>
       </section>
-        
+
         </>
     )
 }

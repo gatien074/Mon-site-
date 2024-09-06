@@ -6,9 +6,17 @@ import Logo from './Logo';
  
 
 
+
+
+
+
+
+
  const Outils =()=>{
     return(
         <>
+
+
         <section className="bg-black p-10">
   <h1 className="text-2xl text-white text-center p-12 font-bold">
     NOS OUTILS
