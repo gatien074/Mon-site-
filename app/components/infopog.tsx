@@ -1,29 +1,36 @@
 // components/Infop.js
+import React from 'react';
 
 const Infop = () => (
-    <section className="mb-8">
-      <h2 className="text-2xl font-bold mb-4">Nos informations</h2>
-      <div className="flex space-x-4">
-        {/* Informations de contact */}
-        <div className="flex-1">
-          <div className="flex items-center mb-2">
-            <i className="fas fa-phone-alt mr-2"></i>
-            <p>+241 01 23 45 67</p>
-          </div>
-          <div className="flex items-center mb-2">
-            <i className="fas fa-envelope mr-2"></i>
-            <span>pog@example.com</span>
-          </div>
-          <div className="flex items-center">
-            <i className="fas fa-map-marker-alt mr-2"></i>
-            <span>Port-Gentil, Gabon</span>
-          </div>
-        </div>
-        {/* Image de la carte */}
-                     
-                </div>
-    </section>
-  );
-  
-  export default Infop;
-  
+  <section className="mb-8  mx-5">
+    <h2 className="text-2xl font-bold mb-4"> Notre galerie</h2>
+    <div className="relative overflow-hidden w-full">
+      <div
+        className="flex gap-3" 
+        style={{
+          display: 'flex',
+          width: '30%', // Ajustez en fonction du nombre d'images
+          animation: 'slide 10s infinite linear'
+        }}
+      >
+        <img src="/pog1.jpeg" alt="Information 1" className="w-full flex-shrink-0" />
+        <img src="/pog2.png" alt="Information 2" className="w-full flex-shrink-0" />
+        <img src="/pog3.jpeg" alt="Information 3" className="w-full flex-shrink-0" />
+        <img src="/pog.webp" alt="Information 3" className="w-full flex-shrink-0" />
+        {/* Ajoutez d'autres images ici */}
+      </div>
+    </div>
+    <style jsx>{`
+      @keyframes slide {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    `}</style>
+  </section>
+);
+
+export default Infop;

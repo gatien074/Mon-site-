@@ -1,21 +1,21 @@
 import Image from "next/image";
-import style from "../style.module.css";
+import Link from "next/link"; // Importer Link pour la navigation
 
 const Section11 = () => {
   return (
-    <>
-      <section className="container mx-auto mt-20 px-4">
-        <div className="text-center mb-10">
-          <h4 className="text-3xl md:text-4xl font-bold">Nous sommes à</h4>
-          <p className="mt-5 text-sm md:text-base">
-            École 241 possède deux campus, à Libreville et Port-Gentil. Cette année, nous nous déployons également à Moanda.
-          </p>
-        </div>
+    <section className="container mx-auto px-12 py-20">
+      <div className="text-center mb-20">
+        <h4 className="text-2xl md:text-4xl font-bold">Nous sommes à</h4>
+        <p className="mt-6 text-xl md:text-2xl text-gray-700">
+          École 241 possède trois campus, à Libreville , Port-Gentil. à Moanda.
+        </p>
+      </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Campus Libreville */}
-          <div className="relative rounded-lg overflow-hidden">
-            <div className="absolute inset-0 bg-black opacity-60"></div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
+        {/* Campus Libreville */}
+        <Link href="/libreville" passHref>
+          <div className="relative rounded-lg overflow-hidden cursor-pointer">
+            <div className="absolute inset-0 bg-black opacity-70"></div>
             <Image
               src="/boulevard.avif"
               alt="Campus Libreville"
@@ -23,15 +23,17 @@ const Section11 = () => {
               style={{ objectFit: 'cover' }}
               className="w-full h-full"
             />
-            <div className="relative z-10 text-center text-red-600 p-4 bg-white bg-opacity-70 rounded-lg">
-              <p className="text-lg font-semibold">120 ÉTUDIANTS FORMÉS À CE JOUR</p>
-              <h5 className="text-2xl md:text-3xl font-bold mt-4">Libreville</h5>
+            <div className="relative z-10 text-center text-white p-12 bg-black bg-opacity-60 rounded-lg">
+              <p className="text-xl md:text-2xl font-semibold">120 ÉTUDIANTS FORMÉS À CE JOUR</p>
+              <h5 className="text-3xl md:text-4xl font-bold mt-4">Libreville</h5>
             </div>
           </div>
+        </Link>
 
-          {/* Campus Port-Gentil */}
-          <div className="relative rounded-lg overflow-hidden">
-            <div className="absolute inset-0 bg-black opacity-60"></div>
+        {/* Campus Port-Gentil */}
+        <Link href="/campuspog" passHref>
+          <div className="relative rounded-lg overflow-hidden cursor-pointer">
+            <div className="absolute inset-0 bg-black opacity-70"></div>
             <Image
               src="/pog.webp"
               alt="Campus Port-Gentil"
@@ -39,15 +41,17 @@ const Section11 = () => {
               style={{ objectFit: 'cover' }}
               className="w-full h-full"
             />
-            <div className="relative z-10 text-center text-white p-4 bg-black bg-opacity-60 rounded-lg">
-              <p className="text-lg font-semibold">120 ÉTUDIANTS FORMÉS À CE JOUR</p>
-              <h5 className="text-2xl md:text-3xl font-bold mt-4">Port-Gentil</h5>
+            <div className="relative z-10 text-center text-white p-12 bg-black bg-opacity-60 rounded-lg">
+              <p className="text-xl md:text-2xl font-semibold">120 ÉTUDIANTS FORMÉS À CE JOUR</p>
+              <h5 className="text-3xl md:text-4xl font-bold mt-4">Port-Gentil</h5>
             </div>
           </div>
+        </Link>
 
-          {/* Campus Moanda */}
-          <div className="relative rounded-lg overflow-hidden">
-            <div className="absolute inset-0 bg-black opacity-60"></div>
+        {/* Campus Moanda */}
+        <Link href="/moanda" passHref>
+          <div className="relative rounded-lg overflow-hidden cursor-pointer">
+            <div className="absolute inset-0 bg-black opacity-70"></div>
             <Image
               src="/bye-moanda.jpg"
               alt="Campus Moanda"
@@ -55,14 +59,14 @@ const Section11 = () => {
               style={{ objectFit: 'cover' }}
               className="w-full h-full"
             />
-            <div className="relative z-10 text-center text-white p-4 bg-black bg-opacity-60 rounded-lg">
-              <p className="text-lg font-semibold">120 ÉTUDIANTS FORMÉS À CE JOUR</p>
-              <h5 className="text-2xl md:text-3xl font-bold mt-4">Moanda</h5>
+            <div className="relative z-10 text-center text-white p-12 bg-black bg-opacity-60 rounded-lg">
+              <p className="text-xl md:text-2xl font-semibold">120 ÉTUDIANTS FORMÉS À CE JOUR</p>
+              <h5 className="text-3xl md:text-4xl font-bold mt-4">Moanda</h5>
             </div>
           </div>
-        </div>
-      </section>
-    </>
+        </Link>
+      </div>
+    </section>
   );
 };
 
